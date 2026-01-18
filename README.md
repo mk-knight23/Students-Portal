@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Admissions Made Easy Portal (Mock Mode)
 
-## Getting Started
+<p align="center">
+  <img src="public/logo.svg" width="120" alt="AME Logo" />
+</p>
 
-First, run the development server:
+<p align="center">
+  <strong>A Multi-Tenant Enterprise Platform - Frontend Prototype</strong>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Overview
+
+Admissions Made Easy (AME) is a production-grade frontend prototype for an educational consultancy platform. This version runs in **Pure Mock Mode**, utilizing client-side mock services to simulate a full backend environment without needing a database connection.
+
+## ✨ Key Features
+
+- **Pure Frontend Architecture**: Zero external dependencies (No DB, No Backend).
+- **Mock Services**: Comprehensive mock data layer simulating Students, Payments, Compliance, and Auth.
+- **Role-Based Access**: Simulated dashboards for Tenant Owners, Staff, and Students.
+- **DPDPA Compliance UI**: Visual audit logs and consent management workflows.
+- **Enterprise UI**: High-fidelity Shadcn/UI components with responsive design.
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS, Shadcn/UI |
+| State | Server Actions (Simulated) |
+| Icons | Lucide React |
+| Charts | Recharts |
+
+## 📁 Project Structure
+
+```
+src/
+├── actions/        # Server Actions (Mocked)
+├── app/            # Next.js App Router
+├── components/     # React UI Components
+├── hooks/          # Custom Hooks
+├── mocks/          # Mock Services & Data Store
+├── services/       # Data Access Layer
+├── types/          # TypeScript Definitions
+└── utils/          # Helpers & Validations
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18+
+- npm
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd students-portal
 
-To learn more about Next.js, take a look at the following resources:
+# Install dependencies
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start the mock server
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+### Mock Credentials
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Role | Email | Password |
+|------|-------|----------|
+| Super Admin | admin@mock.com | (any) |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+(Modify `src/auth.ts` to switch simulated roles).
+
+## 🗺️ Roadmap
+
+Current Version: **v0.0.1 (Frontend Baseline)**
+
+- [x] **v0.0.1**: Initial mock frontend baseline, Zero Backend.
+- [ ] **v0.1.0**: Frontend feature expansion & UI polish.
+- [ ] **v0.2.0**: NextAuth integration with real providers.
+- [ ] **v0.3.0**: Real Backend API integration (Node/Next.js).
+- [ ] **v0.4.0**: Database integration (Postgres + Prisma).
+- [ ] **v0.5.0**: Multi-tenancy SaaS mode enabled.
+- [ ] **v1.0.0**: Production Stable Release.
+
+## 📄 License
+
+Proprietary software for Admissions Made Easy.
