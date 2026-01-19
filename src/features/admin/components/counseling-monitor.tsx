@@ -12,7 +12,7 @@ export function CounselingMonitor() {
     const { students } = useAppStore();
 
     const getStats = (typeId: string) => {
-        const registered = students.filter(s => s.counseling_registrations.includes(typeId)).length;
+        const registered = students.filter(s => s.counselingRegistrations?.includes(typeId as any)).length;
         const total = students.length;
         const percentage = total > 0 ? (registered / total) * 100 : 0;
         return { registered, total, percentage };

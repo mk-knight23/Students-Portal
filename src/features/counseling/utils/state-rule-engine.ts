@@ -7,7 +7,7 @@ export type StateRuleResult = {
 
 export function validateMaharashtraRule(student: any): StateRuleResult {
     // Type A: Birth in MH + SSC/HSC in MH
-    if (student.state === "Maharashtra" && student.academic_history?.class10?.board === "State Board") {
+    if (student.state === "Maharashtra" && student.academicHistory?.class10?.board === "State Board") {
         return { eligible: true, candidatureType: "Type A", quota: "State" };
     }
     // Simple Mock for others

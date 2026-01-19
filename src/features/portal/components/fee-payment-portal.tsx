@@ -25,7 +25,7 @@ export function FeePaymentPortal() {
     const student = students.find(s => s.id === currentUser?.id) || students[0];
 
     // Find a pending payment to "pay" in the demo
-    const pendingPayment = student.payments?.find(p => p.status === 'Pending') || { amount: 5500, type: 'Tuition' };
+    const pendingPayment = student.payments?.find(p => p.status === 'unpaid') || { amount: 5500, type: 'tuition' as const };
 
     const handlePay = async () => {
         setIsProcessing(true);
@@ -36,8 +36,8 @@ export function FeePaymentPortal() {
 
         // Update the actual payment if it exists, otherwise add new
         const updatedPayments = student.payments?.map(p =>
-            (p.amount === pendingPayment.amount && p.type === pendingPayment.type && p.status === 'Pending')
-                ? { ...p, status: 'Success' as const, id: newPaymentId, date: new Date().toISOString().split('T')[0] }
+            (p.amount === pendingPayment.amount && p.type === pendingPayment.type && p.status === 'unpaid')
+                ? { ...p, status: 'paid' as const, id: newPaymentId, paidAt: new Date().toISOString() }
                 : p
         ) || [];
 
@@ -82,7 +82,7 @@ export function FeePaymentPortal() {
                                 </div>
                                 <div className="text-right">
                                     <p className="text-2xl font-black italic tracking-tighter">₹{pendingPayment.amount.toLocaleString()}</p>
-                                    <Badge className="bg-primary/20 text-primary text-[8px] font-black uppercase mt-1">Pending</Badge>
+                                    <Badge className="bg-primary/20 text-primary text-[8px] font-black uppercase mt-1">unpaid</Badge>
                                 </div>
                             </div>
                             <div className="flex items-center justify-between p-6 rounded-3xl bg-muted/5 border border-white/5 opacity-40">

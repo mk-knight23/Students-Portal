@@ -22,11 +22,27 @@ import { Badge } from "@/components/ui/badge"
 import { toast } from "sonner"
 
 export function CounselingPreferenceBuilder() {
-    const { students, updateStudent } = useAppStore();
-    const student = students[0];
+    const { currentUser, students, updateStudent } = useAppStore();
+    const [mounted, setMounted] = useState(false);
+
+    // Find current student or fallback to first for demo safety
+    const student = students.find(s => s.id === currentUser?.id) || students[0];
+
     const [searchTerm, setSearchTerm] = useState("");
-    const [preferences, setPreferences] = useState<any[]>(student.preferences || []);
+    const [preferences, setPreferences] = useState<any[]>([]);
     const [locked, setLocked] = useState(false);
+
+    useState(() => {
+        if (student?.preferences) {
+            setPreferences(student.preferences);
+        }
+    });
+
+    useState(() => {
+        setMounted(true);
+    });
+
+    if (!mounted || !student) return null;
 
     const filteredColleges = colleges.filter(c =>
         c.name.toLowerCase().includes(searchTerm.toLowerCase()) ||

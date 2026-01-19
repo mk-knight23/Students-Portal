@@ -14,36 +14,44 @@ This project follows a normalized feature-based structure optimized for Next.js 
 
 ### `app/`
 Contains the Next.js App Router file-system based routing.
-- `(portal)/`: Protected enterprise portal routes.
-- `(public)/`: Public facing marketing pages.
-- `layout.tsx`: Root layout.
+- `portal/`: Role-specific portal routes (student, parent, admin, staff, agent, auditor)
+- `admin/`: Legacy admin routes
+- `layout.tsx`: Root layout
 
-### `actions/`
-Contains **Server Actions** used for form submissions and mutations.
-*Note: In this Mock Mode, these actions interact with `src/mocks` instead of a database.*
+### `modules/`
+Feature modules with types and mock data.
+- `students/`: Student profiles, workflow states
+- `documents/`: Document slots, verification
+- `counseling/`: Sessions, colleges, preferences
+- `payments/`: Fee structure, transactions
+- `agents/`: Referrals, commissions
+- `analytics/`: Metrics, KPIs
+- `compliance/`: Audit logs, DPDPA
+- `consent/`: Consent management
+- `reports/`: Report templates
+- `branches/`: Multi-branch management
+- `settings/`: App configuration
+- `dashboard/`: Widget types, layouts
 
 ### `components/`
 Reusable UI components.
-- `ui/`: Shadcn/UI primitives (Button, Card, Input).
-- `branding/`: Logo and Theme components.
-- `analytics/`, `students/`, etc.: Feature-specific components.
+- `ui/`: Shadcn/UI primitives and custom components
+- `auth/`: RoleGuard, login components
+- `layout/`: Sidebar, Navbar, etc.
+- `branding/`: Logo and Theme components
+
+### `store/`
+Zustand state management.
+- `useAppStore.ts`: Unified application store
 
 ### `hooks/`
-Custom React hooks for state, UI logic, and performance (e.g., `use-debounce`, `use-mobile`).
-
-### `mocks/`
-The Mock Backend Layer.
-- `data-store.ts`: Centralized in-memory database of students, users, and logs.
-- `services.ts`: Async service methods simulating API latency and errors.
-
-### `services/`
-The Data Access Adapter layer.
-- `data-access.ts`: Standardized getters used by Server Components to fetch data (from Mocks).
+Custom React hooks for state, UI logic, and performance.
 
 ### `types/`
-Global TypeScript definitions, replacing Prisma generated types.
+Global TypeScript definitions.
 
 ### `utils/`
 Helper functions and static logic.
-- `index.ts`: `cn()` utility.
-- `validation/`: Zod schemas for form validation.
+- `index.ts`: `cn()` utility
+- `validation.ts`: Zod schemas and Verhoeff validation
+

@@ -9,7 +9,8 @@ import {
     QrCode,
     MapPin,
     Calendar,
-    User
+    User,
+    Lock
 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -19,22 +20,20 @@ export function IDCardGenerator() {
     const { students, currentUser } = useAppStore();
     const student = students.find(s => s.id === currentUser?.id) || students[0];
 
-    if (student.status !== "Confirmed" && student.status !== "Admission") {
+    if (student.workflowState !== "enrollment" && student.workflowState !== "allotment") {
         return (
             <Card className="glass-card bg-muted/20 border-dashed">
-                <CardContent className="py-12 flex flex-col items-center text-center space-y-4">
-                    <div className="p-4 rounded-full bg-muted/40 text-muted-foreground/30">
-                        <IdCard className="h-10 w-10" />
-                    </div>
-                    <div className="space-y-1">
-                        <h4 className="font-black uppercase tracking-tight text-muted-foreground">Digital ID Not Ready</h4>
-                        <p className="max-w-xs text-[10px] text-muted-foreground/60 font-medium leading-relaxed uppercase tracking-widest">
-                            ID Card generation is only available for confirmed students after final admission verification.
-                        </p>
-                    </div>
-                </CardContent>
+                <CardHeader>
+                    <CardTitle className="text-sm font-black uppercase tracking-tight text-muted-foreground flex items-center gap-2">
+                        <Lock className="h-4 w-4" />
+                        ID Card Generation Locked
+                    </CardTitle>
+                    <CardDescription className="text-[10px] uppercase font-bold tracking-widest leading-none">
+                        Complete your enrollment to unlock your digital ID card.
+                    </CardDescription>
+                </CardHeader>
             </Card>
-        );
+        )
     }
 
     return (
@@ -74,7 +73,7 @@ export function IDCardGenerator() {
                             </div>
                             <div className="flex items-center gap-3">
                                 <Badge variant="outline" className="h-5 px-1.5 rounded-lg border-black/10 font-bold text-[7px] bg-black/5 text-black">BRANCH</Badge>
-                                <span className="text-xs font-black uppercase tracking-tight">{student.branch} Hub</span>
+                                <span className="text-xs font-black uppercase tracking-tight">{student.branchId} Hub</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Badge variant="outline" className="h-5 px-1.5 rounded-lg border-black/10 font-bold text-[7px] bg-black/5 text-black">EXPIRES</Badge>

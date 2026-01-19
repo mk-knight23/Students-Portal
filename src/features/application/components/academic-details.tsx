@@ -62,12 +62,12 @@ export function AcademicDetails({ data, update }: AcademicDetailsProps) {
                     />
                 </div>
                 <div className="space-y-2">
-                    <Label htmlFor="apaar_id">APAAR ID (Mandatory for 2026+)</Label>
+                    <Label htmlFor="apaarId">APAAR ID (Mandatory for 2026+)</Label>
                     <Input
-                        id="apaar_id"
+                        id="apaarId"
                         placeholder="Enter APAAR ID"
-                        value={data.apaar_id}
-                        onChange={(e) => update({ apaar_id: e.target.value })}
+                        value={data.apaarId}
+                        onChange={(e) => update({ apaarId: e.target.value })}
                         className="rounded-xl"
                     />
                 </div>

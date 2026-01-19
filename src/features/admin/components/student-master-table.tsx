@@ -108,8 +108,8 @@ export function StudentMasterTable() {
                                     <td className="px-6 py-4">
                                         <div className="flex flex-col gap-1">
                                             <div className="flex items-center gap-2">
-                                                <span className="text-xs font-black">{student.neet_score}</span>
-                                                <span className="text-[10px] text-muted-foreground tracking-tighter">Rank: {student.neet_rank.toLocaleString()}</span>
+                                                <span className="text-xs font-black">{student.academicHistory?.neet?.score || 0}</span>
+                                                <span className="text-[10px] text-muted-foreground tracking-tighter">Rank: {student.academicHistory?.neet?.rank?.toLocaleString() || 'N/A'}</span>
                                             </div>
                                             <div className="flex items-center gap-2">
                                                 <span className="text-[10px] text-primary font-bold uppercase">{student.city}</span>
@@ -124,7 +124,7 @@ export function StudentMasterTable() {
                                                 {student.category}
                                             </Badge>
                                             <div className="flex flex-wrap gap-1">
-                                                {student.counseling_registrations.map(reg => (
+                                                {student.counselingRegistrations?.map(reg => (
                                                     <span key={reg} className="text-[8px] font-bold text-muted-foreground uppercase">{reg}</span>
                                                 ))}
                                             </div>
@@ -132,11 +132,11 @@ export function StudentMasterTable() {
                                     </td>
                                     <td className="px-6 py-4">
                                         <div className="flex items-center gap-2">
-                                            <div className={`h-1.5 w-1.5 rounded-full ${student.documents_verified ? 'bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.5)]' : 'bg-yellow-500'
+                                            <div className={`h-1.5 w-1.5 rounded-full ${student.documentsVerified ? 'bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.5)]' : 'bg-yellow-500'
                                                 }`} />
-                                            <span className={`text-[10px] font-black uppercase tracking-widest ${student.documents_verified ? 'text-green-500' : 'text-yellow-600'
+                                            <span className={`text-[10px] font-black uppercase tracking-widest ${student.documentsVerified ? 'text-green-500' : 'text-yellow-600'
                                                 }`}>
-                                                {student.status}
+                                                {student.workflowState}
                                             </span>
                                         </div>
                                     </td>

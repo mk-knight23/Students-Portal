@@ -4,25 +4,28 @@ import { useAppStore } from "@/store/useAppStore"
 import { ReactNode, useEffect, useState } from "react"
 import { ShieldAlert, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useRouter } from "next/navigation"
 
 interface RoleGuardProps {
     children: ReactNode;
-    allowedRoles: ('admin' | 'staff' | 'student' | 'parent' | 'agent')[];
+    allowedRoles: ('admin' | 'staff' | 'student' | 'parent' | 'agent' | 'auditor')[];
     fallbackUrl?: string;
 }
 
 export function RoleGuard({ children, allowedRoles, fallbackUrl = "/" }: RoleGuardProps) {
     const { currentUser } = useAppStore();
     const [authorized, setAuthorized] = useState<boolean | null>(null);
+    const router = useRouter();
 
     useEffect(() => {
         // Simulate complex RBAC check
         if (!currentUser) {
-            setAuthorized(false);
+            router.push("/login");
+            // setAuthorized(false); // Don't show UI, just redirect
         } else {
             setAuthorized(allowedRoles.includes(currentUser.role));
         }
-    }, [currentUser, allowedRoles]);
+    }, [currentUser, allowedRoles, router]);
 
     if (authorized === null) {
         return (
@@ -48,7 +51,7 @@ export function RoleGuard({ children, allowedRoles, fallbackUrl = "/" }: RoleGua
                     <div className="pt-4">
                         <Button
                             className="w-full rounded-2xl bg-white text-black font-black hover:bg-white/90"
-                            onClick={() => window.location.href = fallbackUrl}
+                            onClick={() => router.push(fallbackUrl)}
                         >
                             Return to Discovery
                         </Button>

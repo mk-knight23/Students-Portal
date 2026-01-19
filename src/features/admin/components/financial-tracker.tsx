@@ -105,12 +105,12 @@ export function FinancialTracker() {
 
                         <div className="pt-6 space-y-4">
                             <h4 className="text-xs font-black uppercase border-b pb-2">Recent Transactions</h4>
-                            {stats.recentTransactions.map((tx, i) => (
-                                <div key={i} className="flex items-center justify-between p-4 rounded-2xl bg-muted/10 border border-white/5 group">
+                            {stats.recentTransactions.map((tx) => (
+                                <div key={tx.id} className="flex items-center justify-between p-4 rounded-2xl bg-muted/10 border border-white/5 group">
                                     <div className="flex items-center gap-4">
-                                        <div className={`h-10 w-10 rounded-xl flex items-center justify-center font-black text-[10px] ${tx.status === 'Success' ? 'bg-green-500/10 text-green-500' : 'bg-red-500/10 text-red-500'
+                                        <div className={`h-10 w-10 rounded-xl flex items-center justify-center font-black text-[10px] ${tx.status === 'paid' ? 'bg-green-500/10 text-green-500' : 'bg-red-500/10 text-red-500'
                                             }`}>
-                                            {tx.status === 'Success' ? <ArrowUpRight className="h-5 w-5" /> : <ArrowDownRight className="h-5 w-5" />}
+                                            {tx.status === 'paid' ? <ArrowUpRight className="h-5 w-5" /> : <ArrowDownRight className="h-5 w-5" />}
                                         </div>
                                         <div>
                                             <p className="text-xs font-black uppercase">{tx.studentName}</p>
@@ -119,7 +119,7 @@ export function FinancialTracker() {
                                     </div>
                                     <div className="text-right">
                                         <p className="text-sm font-black italic">₹{tx.amount.toLocaleString()}</p>
-                                        <p className={`text-[8px] font-black uppercase ${tx.status === 'Success' ? 'text-green-500' : 'text-red-500'}`}>
+                                        <p className={`text-[8px] font-black uppercase ${tx.status === 'paid' ? 'text-green-500' : 'text-red-500'}`}>
                                             {tx.status}
                                         </p>
                                     </div>

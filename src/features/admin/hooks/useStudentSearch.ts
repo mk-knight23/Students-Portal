@@ -22,8 +22,8 @@ export function useStudentSearch(students: Student[]) {
             const matchesCategory = filters.category === 'all' || student.category === filters.category;
             const matchesState = filters.state === 'all' || student.state === filters.state;
             const matchesCity = filters.city === 'all' || student.city === filters.city;
-            const matchesStatus = filters.status === 'all' || student.status === filters.status;
-            const matchesBranch = filters.branch === 'all' || student.branch === filters.branch;
+            const matchesStatus = filters.status === 'all' || student.workflowState === filters.status;
+            const matchesBranch = filters.branch === 'all' || student.branchId === filters.branch;
 
             return matchesSearch && matchesCategory && matchesState && matchesCity && matchesStatus && matchesBranch;
         });

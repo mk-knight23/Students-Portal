@@ -57,7 +57,7 @@ export function StudentProfileEditor({ student, onClose }: StudentProfileEditorP
                         </div>
                         <div>
                             <h2 className="text-xl font-black uppercase tracking-tight">{student.name}</h2>
-                            <p className="text-xs text-muted-foreground font-mono uppercase tracking-widest">{student.id} • {student.branch}</p>
+                            <p className="text-xs text-muted-foreground font-mono uppercase tracking-widest">{student.id} • {student.branchId}</p>
                         </div>
                     </div>
                     <Button variant="ghost" size="icon" onClick={onClose} className="rounded-xl">
@@ -94,7 +94,7 @@ export function StudentProfileEditor({ student, onClose }: StudentProfileEditorP
                                     <label className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Identity Masking</label>
                                     <div className="flex items-center gap-2 p-3 rounded-xl bg-muted/20 border">
                                         <ShieldCheck className="h-4 w-4 text-green-500" />
-                                        <span className="text-sm font-mono">{formData.aadhaar_masked}</span>
+                                        <span className="text-sm font-mono">{formData.aadhaarMasked}</span>
                                     </div>
                                 </div>
                             </div>
@@ -107,16 +107,17 @@ export function StudentProfileEditor({ student, onClose }: StudentProfileEditorP
                                     <p className="text-xs font-black uppercase">Lifecycle Status</p>
                                     <select
                                         className="mt-1 bg-transparent border-none font-bold text-primary text-sm outline-none cursor-pointer"
-                                        value={formData.status}
-                                        onChange={e => setFormData({ ...formData, status: e.target.value as any })}
+                                        value={formData.workflowState}
+                                        onChange={e => setFormData({ ...formData, workflowState: e.target.value as any })}
                                     >
-                                        <option>Inquiry</option>
-                                        <option>Application</option>
-                                        <option>Documents</option>
-                                        <option>Verification</option>
-                                        <option>Counseling</option>
-                                        <option>Admission</option>
-                                        <option>Confirmed</option>
+                                        <option value="inquiry">Inquiry</option>
+                                        <option value="application">Application</option>
+                                        <option value="documents">Documents</option>
+                                        <option value="verification">Verification</option>
+                                        <option value="counseling">Counseling</option>
+                                        <option value="payment">Payment</option>
+                                        <option value="allotment">Allotment</option>
+                                        <option value="enrollment">Enrollment</option>
                                     </select>
                                 </div>
                             </div>
@@ -131,11 +132,11 @@ export function StudentProfileEditor({ student, onClose }: StudentProfileEditorP
                                 <div className="grid grid-cols-2 gap-6 p-6 rounded-3xl bg-muted/10 border border-white/5">
                                     <div className="space-y-2">
                                         <p className="text-[10px] font-black uppercase text-muted-foreground">NEET Score</p>
-                                        <p className="text-2xl font-black italic">{formData.neet_score}</p>
+                                        <p className="text-2xl font-black italic">{formData.academicHistory?.neet?.score || 0}</p>
                                     </div>
                                     <div className="space-y-2">
                                         <p className="text-[10px] font-black uppercase text-muted-foreground">All India Rank</p>
-                                        <p className="text-2xl font-black italic">#{formData.neet_rank.toLocaleString()}</p>
+                                        <p className="text-2xl font-black italic">#{formData.academicHistory?.neet?.rank?.toLocaleString() || 'N/A'}</p>
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +151,7 @@ export function StudentProfileEditor({ student, onClose }: StudentProfileEditorP
                                         <div className="space-y-1">
                                             <p className="text-xs font-black uppercase">Class 10th (SSC)</p>
                                             <p className="text-[10px] text-muted-foreground font-bold">
-                                                {formData.academic_history?.class10?.board || "SSC"} • {formData.academic_history?.class10?.year || "2023"} • {formData.academic_history?.class10?.percentage.toFixed(2)}%
+                                                {formData.academicHistory?.class10?.board || "SSC"} • {formData.academicHistory?.class10?.year || "2023"} • {formData.academicHistory?.class10?.percentage.toFixed(2)}%
                                             </p>
                                         </div>
                                         <Button variant="ghost" size="sm" className="text-[10px] font-black uppercase text-primary">View Docs</Button>
@@ -159,7 +160,7 @@ export function StudentProfileEditor({ student, onClose }: StudentProfileEditorP
                                         <div className="space-y-1">
                                             <p className="text-xs font-black uppercase">Class 12th (HSC)</p>
                                             <p className="text-[10px] text-muted-foreground font-bold">
-                                                {formData.academic_history?.class12?.board || "HSC"} • {formData.academic_history?.class12?.year || "2025"} • {formData.academic_history?.class12?.percentage.toFixed(2)}%
+                                                {formData.academicHistory?.class12?.board || "HSC"} • {formData.academicHistory?.class12?.year || "2025"} • {formData.academicHistory?.class12?.percentage.toFixed(2)}%
                                             </p>
                                         </div>
                                         <Button variant="ghost" size="sm" className="text-[10px] font-black uppercase text-primary">View Docs</Button>
@@ -177,13 +178,13 @@ export function StudentProfileEditor({ student, onClose }: StudentProfileEditorP
                                 <div className="p-4 rounded-2xl bg-green-500/5 border border-green-500/20 space-y-1">
                                     <p className="text-[9px] font-black uppercase text-green-500">Paid Amount</p>
                                     <p className="text-lg font-black text-green-500">
-                                        ₹ {(formData.payments?.filter(p => p.status === 'Success').reduce((sum, p) => sum + p.amount, 0) || 0).toLocaleString()}
+                                        ₹ {(formData.payments?.filter(p => p.status === 'paid').reduce((sum, p) => sum + p.amount, 0) || 0).toLocaleString()}
                                     </p>
                                 </div>
                                 <div className="p-4 rounded-2xl bg-red-500/5 border border-red-500/20 space-y-1">
                                     <p className="text-[9px] font-black uppercase text-red-500">Pending</p>
                                     <p className="text-lg font-black text-red-500">
-                                        ₹ {(1450000 - (formData.payments?.filter(p => p.status === 'Success').reduce((sum, p) => sum + p.amount, 0) || 0)).toLocaleString()}
+                                        ₹ {(1450000 - (formData.payments?.filter(p => p.status === 'paid').reduce((sum, p) => sum + p.amount, 0) || 0)).toLocaleString()}
                                     </p>
                                 </div>
                             </div>
@@ -197,15 +198,15 @@ export function StudentProfileEditor({ student, onClose }: StudentProfileEditorP
                                     <Button variant="ghost" className="text-[10px] font-black uppercase text-primary h-8">Add Entry</Button>
                                 </div>
                                 <div className="space-y-2">
-                                    {formData.payments?.length ? formData.payments.map((p, i) => (
-                                        <div key={i} className="flex items-center justify-between p-4 rounded-2xl bg-muted/10 border border-white/5 group">
+                                    {formData.payments?.length ? formData.payments.map((p) => (
+                                        <div key={p.id} className="flex items-center justify-between p-4 rounded-2xl bg-muted/10 border border-white/5 group">
                                             <div className="space-y-1">
                                                 <p className="text-xs font-black uppercase">{p.type} Installment</p>
-                                                <p className="text-[10px] text-muted-foreground font-bold">{p.date} • {p.method}</p>
+                                                <p className="text-[10px] text-muted-foreground font-bold">{p.paidAt} • {p.method}</p>
                                             </div>
                                             <div className="flex items-center gap-4">
                                                 <p className="text-sm font-black italic">₹{p.amount.toLocaleString()}</p>
-                                                <Badge className="bg-green-500/10 text-green-500 border-green-500/20 text-[8px] font-black px-1.5 py-0 h-4">Success</Badge>
+                                                <Badge className="bg-green-500/10 text-green-500 border-green-500/20 text-[8px] font-black px-1.5 py-0 h-4">paid</Badge>
                                             </div>
                                         </div>
                                     )) : (

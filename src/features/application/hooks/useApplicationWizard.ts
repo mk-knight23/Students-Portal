@@ -11,16 +11,16 @@ export function useApplicationWizard() {
         name: '',
         email: '',
         phone: '',
-        gender: 'Male' as 'Male' | 'Female' | 'Other',
+        gender: 'male' as 'male' | 'female' | 'other',
         dob: '',
         aadhaar: '',
-        apaar_id: '',
-        category: 'Open',
+        apaarId: '',
+        category: 'general' as any,
         neet_score: 0,
         neet_rank: 0,
         state: 'Maharashtra',
-        counseling_registrations: [] as string[],
-        documents: [] as { id: string, type: string, status: 'Pending', url: string }[]
+        counselingRegistrations: [] as string[],
+        documents: [] as any[]
     });
 
     const updateFormData = (data: Partial<typeof formData>) => {

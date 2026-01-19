@@ -19,13 +19,15 @@ import { useAppStore } from "@/store/useAppStore";
 import { useRouter } from "next/navigation";
 import { ThemeToggle } from "./theme-toggle";
 import { BranchSwitcher } from "./branch-switcher";
+import { MobileSidebar } from "./sidebar";
 
 export function Navbar() {
     const { activeBranch, currentUser } = useAppStore();
     const router = useRouter();
     return (
-        <header className="sticky top-0 z-10 flex h-16 w-full items-center gap-4 glass border-b px-6 lg:px-8">
+        <header className="sticky top-0 z-20 flex h-16 w-full items-center gap-4 glass border-b px-6 lg:px-8">
             <div className="flex-1 flex items-center gap-6">
+                <MobileSidebar />
                 <BranchSwitcher />
                 <div className="relative flex-1 max-w-md group">
                     <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground group-focus-within:text-primary transition-colors" />

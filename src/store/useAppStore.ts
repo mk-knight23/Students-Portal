@@ -1,46 +1,9 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
+import { StudentProfile as Student, StudentWorkflowState, DocumentSlotState, PaymentState } from '@/modules/students/types'
+import { mockStudents } from '@/modules/students/mock-data'
 
-export interface AcademicHistory {
-    class10: { board: string; year: string; percentage: number; marksheetUrl?: string };
-    class12: { board: string; year: string; percentage: number; marksheetUrl?: string };
-    neetDetails: { rollNo: string; score: number; rank: number; admitCardUrl?: string };
-}
-
-export interface PaymentRecord {
-    id: string;
-    amount: number;
-    date: string;
-    type: 'Tuition' | 'Hostel' | 'Other';
-    method: 'UPI' | 'Bank Transfer' | 'Cash';
-    status: 'Success' | 'Pending' | 'Failed';
-}
-
-export interface Student {
-    id: string;
-    name: string;
-    email: string;
-    phone: string;
-    gender: 'Male' | 'Female' | 'Other';
-    dob: string;
-    aadhaar_masked: string;
-    apaar_id?: string;
-    category: string;
-    neet_score: number;
-    neet_rank: number;
-    state: string;
-    status: 'Inquiry' | 'Application' | 'Documents' | 'Verification' | 'Counseling' | 'Admission' | 'Confirmed';
-    documents_verified: boolean;
-    branch: string;
-    registration_date: string;
-    preferences: { collegeId: string; rank: number }[];
-    documents: { id: string; type: string; status: 'Pending' | 'Verified' | 'Rejected'; url: string }[];
-    counseling_registrations: string[];
-    academic_history?: AcademicHistory;
-    payments?: PaymentRecord[];
-    referral_agent_id?: string;
-    city: string;
-}
+export type { Student }
 
 export interface Branch {
     id: string;
@@ -67,7 +30,7 @@ export interface Staff {
     email: string;
 }
 
-export type UserRole = 'admin' | 'staff' | 'student' | 'parent' | 'agent';
+export type UserRole = 'admin' | 'staff' | 'student' | 'parent' | 'agent' | 'auditor';
 
 export interface Notification {
     id: string;
@@ -93,7 +56,7 @@ interface AppState {
     } | null;
 
     // Actions
-    addStudent: (student: Omit<Student, 'id' | 'registration_date'>) => void;
+    addStudent: (student: Omit<Student, 'id' | 'registrationDate'>) => void;
     updateStudent: (id: string, data: Partial<Student>) => void;
     deleteStudent: (id: string) => void;
     setRole: (role: UserRole) => void;
@@ -109,17 +72,51 @@ interface AppState {
     addNotification: (notification: Omit<Notification, 'id' | 'date' | 'read'>) => void;
     markAsRead: (id: string) => void;
 
+    // Auth Actions
+    login: (role: UserRole) => void;
+
+    // State Machine Actions
+    advanceStudentWorkflow: (id: string, nextState: StudentWorkflowState) => void;
+    updateDocumentSlot: (studentId: string, docId: string, status: DocumentSlotState) => void;
+    updatePaymentStatus: (studentId: string, paymentId: string, status: PaymentState) => void;
+
     // Branch Context
     activeBranch: string;
     setActiveBranch: (branch: string) => void;
 }
 
-import studentsV3 from "../data/mock-students.json"
-
 export const useAppStore = create<AppState>()(
     persist(
         (set) => ({
-            students: studentsV3 as Student[],
+            students: mockStudents,
+            // ... (rest of initial state remains same, we just inject actions)
+
+            // Re-adding existing actions for context, but only replacing interface and adding new actions in implementation below
+
+            advanceStudentWorkflow: (id, nextState) => set((state) => ({
+                students: state.students.map((s) => s.id === id ? { ...s, workflowState: nextState } : s)
+            })),
+
+            updateDocumentSlot: (studentId, docId, status) => set((state) => ({
+                students: state.students.map((s) => {
+                    if (s.id !== studentId) return s;
+                    return {
+                        ...s,
+                        documents: s.documents.map(d => d.id === docId ? { ...d, status } : d)
+                    };
+                })
+            })),
+
+            updatePaymentStatus: (studentId, paymentId, status) => set((state) => ({
+                students: state.students.map((s) => {
+                    if (s.id !== studentId) return s;
+                    return {
+                        ...s,
+                        payments: s.payments?.map(p => p.id === paymentId ? { ...p, status } : p) || []
+                    };
+                })
+            })),
+
             branches: [
                 { id: "BR01", name: "Latur Hub", location: "Latur, Maharashtra", studentCount: 1248 },
                 { id: "BR02", name: "Pune Center", location: "Pune, Maharashtra", studentCount: 850 },
@@ -148,11 +145,11 @@ export const useAppStore = create<AppState>()(
                 const newStudent: Student = {
                     ...studentData,
                     id,
-                    registration_date: new Date().toISOString(),
+                    registrationDate: new Date().toISOString(),
                     preferences: studentData.preferences || [],
                     documents: studentData.documents || [],
-                    counseling_registrations: studentData.counseling_registrations || [],
-                    academic_history: studentData.academic_history,
+                    counselingRegistrations: studentData.counselingRegistrations || [],
+                    academicHistory: studentData.academicHistory!,
                     payments: studentData.payments || []
                 };
                 return { students: [...state.students, newStudent] };
@@ -197,11 +194,37 @@ export const useAppStore = create<AppState>()(
                 notifications: state.notifications.map(n => n.id === id ? { ...n, read: true } : n)
             })),
 
+            login: (role) => set(() => {
+                // Pick a student in 'counseling' stage for a better demo experience (more data populated)
+                const demoStudent = mockStudents.find(s => s.workflowState === 'counseling') || mockStudents[0];
+                const demoParent = {
+                    id: `PAR${demoStudent.id}`,
+                    name: demoStudent.parentName || 'Parent',
+                    role: 'parent' as UserRole
+                };
+
+                const mockUsers: Record<UserRole, AppState['currentUser']> = {
+                    student: {
+                        id: demoStudent.id,
+                        name: demoStudent.name,
+                        role: "student",
+                        branchId: demoStudent.branchId
+                    },
+                    parent: demoParent,
+                    admin: { id: "ADM001", name: "Super Admin", role: "admin" },
+                    staff: { id: "STF01", name: "Priya Sharma", role: "staff", branchId: "BR01" },
+                    agent: { id: "AG01", name: "Rajesh Kumar", role: "agent" },
+                    auditor: { id: "AUD001", name: "Vikram Singh", role: "auditor" }
+                };
+                return { currentUser: mockUsers[role] };
+            }),
+
             activeBranch: "Latur",
             setActiveBranch: (branch) => set({ activeBranch: branch }),
         }),
         {
-            name: 'ame-portal-storage',
+            name: 'ame-portal-demo-v0.3.2',
+            storage: createJSONStorage(() => sessionStorage),
         }
     )
 );

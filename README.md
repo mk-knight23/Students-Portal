@@ -12,39 +12,40 @@
 
 ## 🚀 Overview
 
-Admissions Made Easy (AME) is a production-grade frontend prototype for an educational consultancy platform. This version runs in **Pure Mock Mode**, utilizing client-side mock services to simulate a full backend environment without needing a database connection.
+Admissions Made Easy (AME.HUB) is a production-grade frontend prototype for an educational consultancy platform. This version runs in **Pure Mock Mode**, utilizing client-side mock services to simulate a full backend environment without needing a database connection. **Release Prep v0.0.2** features portal consolidation, routing fixes, and direct role-based entry.
 
 ## ✨ Key Features
 
 - **Pure Frontend Architecture**: Zero external dependencies (No DB, No Backend).
-- **Mock Services**: Comprehensive mock data layer simulating Students, Payments, Compliance, and Auth.
-- **Role-Based Access**: Simulated dashboards for Tenant Owners, Staff, and Students.
-- **DPDPA Compliance UI**: Visual audit logs and consent management workflows.
-- **Enterprise UI**: High-fidelity Shadcn/UI components with responsive design.
+- **Consolidated Portals**: Strict enforcement of 6 canonical roles (/portal/student, /portal/parent, /portal/staff, /portal/admin, /portal/agent, /portal/auditor).
+- **Scaled Mock Data**: 100+ generated student profiles with comprehensive academic, financial, and document history.
+- **Session-Only Mode**: State persists in `sessionStorage` for high-vitality demo runs (resets on refresh).
+- **Enterprise UI**: High-fidelity Shadcn/UI components with glassmorphism, framer-motion animations, and premium dark/glass aesthetics.
+- **Multi-Role Dashboards**: Role-specific dashboards with KPIs, financial trackers, and compliance monitors.
+- **DPDPA Compliance UI**: Visual audit logs and consent management workflows for regulatory alignment.
 
 ## 🛠️ Tech Stack
 
 | Category | Technology |
 |----------|------------|
-| Framework | Next.js 16 (App Router) |
+| Framework | Next.js 15 (App Router) |
 | Language | TypeScript |
-| Styling | Tailwind CSS, Shadcn/UI |
-| State | Server Actions (Simulated) |
+| Styling | Tailwind CSS, Shadcn/UI (Vanilla CSS + Radix) |
+| State | Zustand (with session-only persist) |
 | Icons | Lucide React |
-| Charts | Recharts |
+| Animations | Framer Motion |
 
 ## 📁 Project Structure
 
 ```
 src/
-├── actions/        # Server Actions (Mocked)
-├── app/            # Next.js App Router
-├── components/     # React UI Components
-├── hooks/          # Custom Hooks
-├── mocks/          # Mock Services & Data Store
-├── services/       # Data Access Layer
-├── types/          # TypeScript Definitions
-└── utils/          # Helpers & Validations
+├── app/            # Next.js App Router (Standardized Portals)
+├── components/     # Shared UI Components & Layouts
+├── features/       # Modular features (Admin, Portal, Counseling, etc.)
+├── store/          # Zustand State (AppStore + Mock State)
+├── modules/        # Domain-specific logic & mock-data generators
+├── types/          # Unified TypeScript Definitions
+└── utils/          # Helpers & Formatting
 ```
 
 ## 🚀 Getting Started
@@ -63,32 +64,26 @@ cd students-portal
 # Install dependencies
 npm install
 
-# Start the mock server
+# Start the demo portal
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
 
-### Mock Credentials
+### Mock Access
 
-| Role | Email | Password |
-|------|-------|----------|
-| Super Admin | admin@mock.com | (any) |
-
-(Modify `src/auth.ts` to switch simulated roles).
+The landing page provides a **Demo Access Hub** to instantly switch between the 6 canonical roles.
 
 ## 🗺️ Roadmap
-
-Current Version: **v0.0.2 (Cleanup + Stabilization)**
-
-- [x] **v0.0.1**: Initial mock frontend baseline, Zero Backend.
-- [x] **v0.0.2**: Cleanup, naming consistency, lint fixes, docs update.
-- [ ] **v0.1.0**: Frontend feature expansion & UI polish.
-- [ ] **v0.2.0**: NextAuth integration with real providers.
-- [ ] **v0.3.0**: Real Backend API integration (Node/Next.js).
-- [ ] **v0.4.0**: Database integration (Postgres + Prisma).
-- [ ] **v0.5.0**: Multi-tenancy SaaS mode enabled.
-- [ ] **v1.0.0**: Production Stable Release.
+ 
+ Current Version: **v0.0.2 (UI Fix & Portal Consolidation)**
+ 
+ - [x] **v0.0.1**: Initial Frontend Prototype & Setup.
+ - [x] **v0.0.2**: Canonical Portal Consolidation, Routing Cleanup, Mock Mode Stable, Role Hub Base.
+ - [ ] **v0.1.x**: Auth Simulation & Security Guard Expansion.
+ - [ ] **v0.2.x**: Backend Binding & Prisma Integration.
+ - [ ] **v0.3.x**: Multi-Tenant Architecture & Enterprise Scaling.
+ - [ ] **v1.0.0**: Production Stable AME.HUB.
 
 ## 📄 License
 

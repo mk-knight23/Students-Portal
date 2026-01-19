@@ -6,8 +6,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-outfit);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -150,6 +150,88 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-chart-2;
   }
+  
+  /* Role-based theming */
+  .portal-student {
+    --primary: oklch(0.7 0.2 264);
+    --primary-foreground: oklch(0.985 0 0);
+  }
+  .portal-parent {
+    --primary: oklch(0.65 0.2 180);
+    --primary-foreground: oklch(0.985 0 0);
+  }
+  .portal-admin {
+    --primary: oklch(0.6 0.2 0);
+    --primary-foreground: oklch(0.985 0 0);
+  }
+  .portal-staff {
+    --primary: oklch(0.65 0.15 40);
+    --primary-foreground: oklch(0.985 0 0);
+  }
+  .portal-agent {
+    --primary: oklch(0.7 0.2 140);
+    --primary-foreground: oklch(0.985 0 0);
+  }
+  .portal-auditor {
+    --primary: oklch(0.5 0.1 280);
+    --primary-foreground: oklch(0.985 0 0);
+  }
+  
+  /* Responsive utilities */
+  .container-mobile {
+    @apply px-4 sm:px-6 md:px-8 lg:px-12;
+  }
+  .stack-mobile {
+    @apply flex flex-col gap-4 sm:flex-row sm:gap-6;
+  }
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4;
+  }
+  .hide-mobile {
+    @apply hidden sm:block;
+  }
+  .show-mobile {
+    @apply block sm:hidden;
+  }
+  
+  /* Dashboard card grid */
+  .dashboard-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
+  }
+  
+  /* Counseling preference grid - tablet optimized */
+  .counseling-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4;
+  }
+  
+  /* SaaS style - for student/parent */
+  .saas-header {
+    @apply bg-gradient-to-r from-primary/5 to-transparent border-b;
+  }
+  .saas-card {
+    @apply bg-card rounded-2xl border shadow-sm hover:shadow-md transition-shadow;
+  }
+  
+  /* Console style - for admin/staff/agent */
+  .console-header {
+    @apply bg-black/5 dark:bg-white/5 border-b border-border/50;
+  }
+  .console-card {
+    @apply bg-muted/30 rounded-lg border border-border/30;
+  }
+  
+  /* Print utilities */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    .print-only {
+      display: block !important;
+    }
+    .print-break {
+      page-break-after: always;
+    }
+  }
 }
 
 @keyframes float {
@@ -158,6 +240,40 @@
   100% { transform: translateY(0px); }
 }
 
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes slide-in {
+  from { transform: translateX(-10px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.25rem; }
+  h3 { font-size: 1rem; }
+}
+
+/* Touch-friendly spacing on mobile */
+@media (max-width: 768px) {
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+

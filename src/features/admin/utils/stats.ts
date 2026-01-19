@@ -2,13 +2,13 @@ import { Student } from "@/store/useAppStore";
 
 export function calculateDashboardStats(students: Student[]) {
     const total = students.length;
-    const verified = students.filter(s => s.documents_verified).length;
+    const verified = students.filter(s => s.documentsVerified).length;
     const pending = total - verified;
 
     const genderDist = {
-        male: students.filter(s => s.gender === 'Male').length,
-        female: students.filter(s => s.gender === 'Female').length,
-        other: students.filter(s => s.gender === 'Other').length,
+        male: students.filter(s => s.gender === 'male').length,
+        female: students.filter(s => s.gender === 'female').length,
+        other: students.filter(s => s.gender === 'other').length,
     };
 
     const categoryDist = students.reduce((acc, s) => {
@@ -17,7 +17,7 @@ export function calculateDashboardStats(students: Student[]) {
     }, {} as Record<string, number>);
 
     const registrationDist = students.reduce((acc, s) => {
-        s.counseling_registrations.forEach(reg => {
+        s.counselingRegistrations?.forEach(reg => {
             acc[reg] = (acc[reg] || 0) + 1;
         });
         return acc;
@@ -38,42 +38,43 @@ export function calculateDashboardStats(students: Student[]) {
     const totalRevenueTarget = 25000000; // 2.5 Cr target
     const allPayments = students.flatMap(s => s.payments || []);
     const collectedRevenue = allPayments
-        .filter(p => p.status === 'Success')
+        .filter(p => p.status === 'paid')
         .reduce((sum, p) => sum + p.amount, 0);
 
     const pendingRevenue = allPayments
-        .filter(p => p.status === 'Pending')
+        .filter(p => p.status === 'unpaid')
         .reduce((sum, p) => sum + p.amount, 0);
 
-    const successfulPaymentsCount = allPayments.filter(p => p.status === 'Success').length;
+    const successfulPaymentsCount = allPayments.filter(p => p.status === 'paid').length;
     const totalPaymentsCount = allPayments.length;
     const paymentVelocity = totalPaymentsCount > 0 ? (successfulPaymentsCount / totalPaymentsCount) * 100 : 0;
 
     // Agency Stats
     const agencyReferrals = students.reduce((acc, s) => {
-        if (s.referral_agent_id) {
-            acc[s.referral_agent_id] = (acc[s.referral_agent_id] || 0) + 1;
+        if (s.referralAgentId) {
+            acc[s.referralAgentId] = (acc[s.referralAgentId] || 0) + 1;
         }
         return acc;
     }, {} as Record<string, number>);
 
     // Branch Leaderboard
     const branchStats = students.reduce((acc, s) => {
-        acc[s.branch] = (acc[s.branch] || 0) + 1;
+        acc[s.branchId] = (acc[s.branchId] || 0) + 1;
         return acc;
     }, {} as Record<string, number>);
 
     const recentTransactions = allPayments
-        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .sort((a, b) => new Date(b.paidAt || 0).getTime() - new Date(a.paidAt || 0).getTime())
         .slice(0, 5)
         .map(p => {
             const student = students.find(s => s.payments?.some(sp => sp.id === p.id));
             return {
                 studentName: student?.name || 'Unknown',
                 amount: p.amount,
-                date: p.date,
+                date: p.paidAt || '',
                 status: p.status,
-                type: p.type
+                type: p.type,
+                id: p.id
             };
         });
 

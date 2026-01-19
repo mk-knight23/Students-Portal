@@ -7,6 +7,7 @@ import {
     ShieldCheck,
     Lock,
     User,
+    UserCheck,
     Users,
     ArrowRight,
     Sparkles
@@ -21,7 +22,7 @@ import { toast } from "sonner";
 import { signIn } from "next-auth/react";
 
 export default function LoginPage() {
-    const [role, setRole] = React.useState<"admin" | "student">("admin");
+    const [role, setRole] = React.useState<"admin" | "student" | "staff">("admin");
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
     const [isLoading, setIsLoading] = React.useState(false);
@@ -48,7 +49,7 @@ export default function LoginPage() {
                 toast.success(`Welcome back`, {
                     description: "Standard session established with DPDPA audit logging active."
                 });
-                router.push("/");
+                router.push(`/portal/${role}/dashboard`);
             }
         } catch (error) {
             toast.error("Authentication failed");
@@ -95,26 +96,36 @@ export default function LoginPage() {
                             <form onSubmit={handleLogin} className="space-y-8">
                                 <div className="space-y-4">
                                     <Label className="text-xs font-bold uppercase tracking-widest text-muted-foreground ml-1">Access Role</Label>
-                                    <div className="grid grid-cols-2 gap-4">
+                                    <div className="grid grid-cols-3 gap-2">
                                         <div
                                             onClick={() => setRole("student")}
-                                            className={`p-4 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "student"
+                                            className={`p-3 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "student"
                                                 ? "bg-primary/20 border-primary shadow-lg shadow-primary/10"
                                                 : "bg-white/5 border-white/10 hover:border-white/20"
                                                 }`}
                                         >
-                                            <User className={`h-6 w-6 ${role === "student" ? "text-primary" : "text-muted-foreground"}`} />
-                                            <span className={`text-[10px] font-bold uppercase tracking-widest ${role === "student" ? "text-primary" : "text-muted-foreground"}`}>Student Portal</span>
+                                            <User className={`h-5 w-5 ${role === "student" ? "text-primary" : "text-muted-foreground"}`} />
+                                            <span className={`text-[9px] font-bold uppercase tracking-tight text-center ${role === "student" ? "text-primary" : "text-muted-foreground"}`}>Student</span>
+                                        </div>
+                                        <div
+                                            onClick={() => setRole("staff")}
+                                            className={`p-3 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "staff"
+                                                ? "bg-primary/20 border-primary shadow-lg shadow-primary/10"
+                                                : "bg-white/5 border-white/10 hover:border-white/20"
+                                                }`}
+                                        >
+                                            <UserCheck className={`h-5 w-5 ${role === "staff" ? "text-primary" : "text-muted-foreground"}`} />
+                                            <span className={`text-[9px] font-bold uppercase tracking-tight text-center ${role === "staff" ? "text-primary" : "text-muted-foreground"}`}>Office Staff</span>
                                         </div>
                                         <div
                                             onClick={() => setRole("admin")}
-                                            className={`p-4 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "admin"
+                                            className={`p-3 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "admin"
                                                 ? "bg-primary/20 border-primary shadow-lg shadow-primary/10"
                                                 : "bg-white/5 border-white/10 hover:border-white/20"
                                                 }`}
                                         >
-                                            <Users className={`h-6 w-6 ${role === "admin" ? "text-primary" : "text-muted-foreground"}`} />
-                                            <span className={`text-[10px] font-bold uppercase tracking-widest ${role === "admin" ? "text-primary" : "text-muted-foreground"}`}>Office Admin</span>
+                                            <Users className={`h-5 w-5 ${role === "admin" ? "text-primary" : "text-muted-foreground"}`} />
+                                            <span className={`text-[9px] font-bold uppercase tracking-tight text-center ${role === "admin" ? "text-primary" : "text-muted-foreground"}`}>Admin</span>
                                         </div>
                                     </div>
                                 </div>

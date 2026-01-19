@@ -20,21 +20,42 @@ export function ApplicationWizard() {
     };
 
     const handleFinalSubmit = () => {
-        // In a real app, we'd validate the whole object here
+        // Map the wizard formData to the StudentProfile interface
         addStudent({
-            ...formData,
-            status: 'Application',
-            documents_verified: false,
-            branch: 'Latur', // Default for now
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            gender: formData.gender,
+            dob: formData.dob,
+            aadhaarMasked: formData.aadhaar.replace(/.(?=.{4})/g, 'X'),
+            apaarId: formData.apaarId,
+            category: formData.category,
+            state: formData.state,
+            city: 'TBD', // Placeholder
+            workflowState: 'application',
+            academicHistory: {
+                class10: { board: 'State Board', year: '2022', percentage: 85 },
+                class12: { board: 'State Board', year: '2024', percentage: 82, stream: 'PCR' },
+                neet: {
+                    rollNo: '2026001',
+                    score: formData.neet_score,
+                    rank: formData.neet_rank,
+                    year: '2026'
+                }
+            },
+            documents: [],
+            documentsVerified: false,
+            counselingRegistrations: [],
             preferences: [],
-            documents: []
+            payments: [],
+            branchId: 'Latur'
         } as any);
 
         toast.success("Application Submitted Successfully!", {
-            description: "Your registration number will be generated shortly.",
+            description: "Your registration is being processed.",
         });
 
-        window.location.href = "/student/dashboard";
+        window.location.href = "/portal/student/dashboard";
     };
 
     const renderStep = () => {

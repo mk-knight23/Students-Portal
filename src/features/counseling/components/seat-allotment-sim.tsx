@@ -19,10 +19,19 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 
 export function SeatAllotmentSim() {
+    const [mounted, setMounted] = useState(false);
     const [isRunning, setIsRunning] = useState(false);
     const [result, setResult] = useState<any>(null);
-    const { students } = useAppStore();
-    const student = students[0]; // Mock current student
+    const { currentUser, students } = useAppStore();
+
+    // Find current student or fallback to first for demo safety
+    const student = students.find(s => s.id === currentUser?.id) || students[0];
+
+    useState(() => {
+        setMounted(true);
+    });
+
+    if (!mounted || !student) return null;
 
     const runAllotment = async () => {
         setIsRunning(true);

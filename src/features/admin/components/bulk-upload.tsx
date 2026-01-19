@@ -46,17 +46,34 @@ export function BulkUpload() {
         if (!previewData) return;
 
         previewData.forEach(s => {
+            const studentId = `STU${Math.floor(Math.random() * 900000 + 100000)}`;
             addStudent({
-                ...s,
-                gender: "Male" as any, // Default for mock
+                name: s.name,
+                email: s.email,
+                phone: s.phone,
+                gender: "male",
                 dob: "2007-01-01",
-                aadhaar_masked: "XXXX XXXX 0000",
-                status: "Inquiry",
-                documents_verified: false,
-                branch: "Pune Center",
+                aadhaarMasked: "XXXX XXXX 0000",
+                category: (s.category || 'general').toLowerCase() as any,
+                state: s.state,
+                city: "Pune",
+                workflowState: "inquiry",
+                academicHistory: {
+                    class10: { board: 'State Board', year: '2023', percentage: 85 },
+                    class12: { board: 'State Board', year: '2025', percentage: 82, stream: 'PCR' },
+                    neet: {
+                        rollNo: `R${studentId}`,
+                        score: s.neet_score,
+                        rank: s.neet_rank,
+                        year: '2026'
+                    }
+                },
+                documentsVerified: false,
+                branchId: "Pune Center",
                 preferences: [],
                 documents: [],
-                counseling_registrations: [],
+                counselingRegistrations: [],
+                payments: []
             });
         });
 

@@ -13,20 +13,11 @@ export default function PortalLayout({
     // Ensure student role for this entire section
     const { setCurrentUser } = useAppStore();
 
-    useEffect(() => {
-        // Mock set student role if not set (for demo visibility)
-        const currentUser = useAppStore.getState().currentUser;
-        if (!currentUser || currentUser.role !== 'student') {
-            setCurrentUser({
-                id: "ST2026001",
-                name: "Aditya Kulkarni",
-                role: "student"
-            });
-        }
-    }, []);
+    // RoleGuard handles access control, so we don't need to force a user here.
+    // The login page is now the entry point.
 
     return (
-        <RoleGuard allowedRoles={['student']}>
+        <RoleGuard allowedRoles={['student', 'parent', 'admin', 'staff', 'agent', 'auditor']}>
             <MainLayout>
                 {children}
             </MainLayout>

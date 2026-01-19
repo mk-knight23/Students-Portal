@@ -9,9 +9,9 @@ export function exportToCSV(students: Student[], fileName: string = "students_ex
         s.phone,
         s.category,
         s.state,
-        s.neet_score,
-        s.neet_rank,
-        s.status
+        s.academicHistory?.neet?.score || 0,
+        s.academicHistory?.neet?.rank || 0,
+        s.workflowState
     ]);
 
     const csvContent = [
@@ -41,8 +41,8 @@ export function generateRegistrationPDF(student: Student) {
     NAME: ${student.name}
     CATEGORY: ${student.category}
     STATE: ${student.state}
-    NEET SCORE: ${student.neet_score}
-    NEET RANK: ${student.neet_rank}
+    NEET SCORE: ${student.academicHistory?.neet?.score || 0}
+    NEET RANK: ${student.academicHistory?.neet?.rank || 0}
     
     TIMESTAMP: ${new Date().toLocaleString()}
     -----------------------------------

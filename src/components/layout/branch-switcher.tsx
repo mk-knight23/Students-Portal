@@ -31,7 +31,7 @@ export function BranchSwitcher() {
             <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="glass h-10 px-4 rounded-xl gap-2 border-white/10 shadow-lg">
                     <Globe className="h-4 w-4 text-primary" />
-                    <span className="text-xs font-bold tracking-tight">{activeBranch} Office</span>
+                    <span className="hidden sm:inline text-xs font-bold tracking-tight">{activeBranch} Office</span>
                     <ChevronDown className="h-3 w-3 text-muted-foreground" />
                 </Button>
             </DropdownMenuTrigger>

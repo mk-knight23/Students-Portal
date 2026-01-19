@@ -34,14 +34,14 @@ export function DocumentManager() {
 
             // Update student document state
             const newDoc = {
-                id: `DOC-${Date.now()}`,
-                type: slotId,
-                status: 'Pending' as const,
-                url: URL.createObjectURL(file)
+                id: Math.random().toString(36).substr(2, 9),
+                type: 'class_12_marksheet' as const,
+                status: 'pending' as const,
+                url: '#'
             };
 
             updateStudent(student.id, {
-                documents: [...student.documents, newDoc]
+                documents: [...(student.documents || []), newDoc]
             });
 
             toast.success(`${slotId.toUpperCase()} Uploaded`, {
