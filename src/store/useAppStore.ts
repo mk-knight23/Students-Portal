@@ -23,6 +23,15 @@ export interface Staff {
     email: string;
 }
 
+export interface Agency {
+    id: string;
+    name: string;
+    contactPerson: string;
+    email: string;
+    phone: string;
+    status: 'active' | 'inactive';
+}
+
 export type UserRole = 'admin' | 'staff' | 'student' | 'head';
 
 export interface Notification {
@@ -39,6 +48,7 @@ interface AppState {
     students: Student[];
     branches: Branch[];
     staff: Staff[];
+    agencies: Agency[];
     notifications: Notification[];
     currentUser: {
         id: string;
@@ -116,6 +126,11 @@ export const useAppStore = create<AppState>()(
                 ...mockStaff,
                 ...mockHeads,
                 { id: "ADM001", name: "Super Admin", role: "admin", branchId: "Global", email: "admin@ame.com" }
+            ],
+            agencies: [
+                { id: "AG001", name: "EduConnect Partners", contactPerson: "Rahul Sharma", email: "rahul@educonnect.in", phone: "+91-9876543210", status: "active" },
+                { id: "AG002", name: "Career Path Associates", contactPerson: "Priya Desai", email: "priya@careerpath.in", phone: "+91-9876543211", status: "active" },
+                { id: "AG003", name: "Bright Future Consultants", contactPerson: "Amit Patel", email: "amit@brightfuture.in", phone: "+91-9876543212", status: "active" },
             ],
             notifications: [
                 { id: "NT01", title: "K-EA Portal Open", message: "Karnataka state preferences are now live.", type: "Info", date: new Date().toISOString(), read: false },
