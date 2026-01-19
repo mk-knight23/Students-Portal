@@ -31,54 +31,24 @@ export default function RootPage() {
             delay: 0.1
         },
         {
-            id: 'parent',
-            label: "Parent Login",
-            icon: Users,
-            description: "View your child's progress and payment history.",
-            color: "text-cyan-400",
-            bg: "bg-cyan-500/10",
-            border: "group-hover:border-cyan-500/50",
-            delay: 0.2
-        },
-        {
             id: 'staff',
-            label: "Staff Login",
+            label: "Branch Staff Login",
             icon: UserCheck,
             description: "Verify documents and manage student inquiries.",
             color: "text-orange-400",
             bg: "bg-orange-500/10",
             border: "group-hover:border-orange-500/50",
-            delay: 0.3
+            delay: 0.2
         },
         {
-            id: 'admin',
-            label: "Admin Login",
+            id: 'head',
+            label: "Branch Head Login",
             icon: ShieldCheck,
-            description: "System oversight, reports, and user management.",
-            color: "text-red-500",
-            bg: "bg-red-500/10",
-            border: "group-hover:border-red-500/50",
-            delay: 0.4
-        },
-        {
-            id: 'agent',
-            label: "Agent Login",
-            icon: Briefcase,
-            description: "Track referrals and view commission status.",
-            color: "text-green-400",
-            bg: "bg-green-500/10",
-            border: "group-hover:border-green-500/50",
-            delay: 0.5
-        },
-        {
-            id: 'auditor',
-            label: "Auditor Login",
-            icon: BookOpen,
-            description: "Read-only access to compliance logs and reports.",
-            color: "text-purple-400",
-            bg: "bg-purple-500/10",
-            border: "group-hover:border-purple-500/50",
-            delay: 0.6
+            description: "Oversee branch operations and view reports.",
+            color: "text-blue-400",
+            bg: "bg-blue-500/10",
+            border: "group-hover:border-blue-500/50",
+            delay: 0.3
         }
     ];
 
@@ -98,7 +68,7 @@ export default function RootPage() {
                         className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 backdrop-blur-md text-[9px] font-bold uppercase tracking-[0.2em] text-primary"
                     >
                         <Zap className="h-3 w-3" />
-                        AME.HUB Node v0.3.2 — Demo Access
+                        AME.HUB Node v0.0.3 — Operational Hub
                     </motion.div>
 
                     <motion.h1
@@ -116,7 +86,7 @@ export default function RootPage() {
                         transition={{ delay: 0.2 }}
                         className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium"
                     >
-                        Simulated authentication environment. Click any role to enter the portal as a demo user.
+                        Unified Operational Flow for AME Branches. Select your portal to proceed.
                     </motion.p>
                 </div>
 

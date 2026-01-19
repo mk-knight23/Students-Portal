@@ -1,6 +1,6 @@
 {
   "name": "students-portal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "predev": "rm -f .next/dev/lock",

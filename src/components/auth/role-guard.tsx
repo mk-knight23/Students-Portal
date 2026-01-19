@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation"
 
 interface RoleGuardProps {
     children: ReactNode;
-    allowedRoles: ('admin' | 'staff' | 'student' | 'parent' | 'agent' | 'auditor')[];
+    allowedRoles: ('admin' | 'staff' | 'student' | 'head')[];
     fallbackUrl?: string;
 }
 

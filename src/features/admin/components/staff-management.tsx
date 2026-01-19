@@ -45,9 +45,9 @@ export function StaffManagement() {
                                 <div className="h-10 w-10 rounded-xl bg-muted/20 flex items-center justify-center text-muted-foreground group-hover:bg-primary/10 group-hover:text-primary transition-colors">
                                     <UserCog className="h-5 w-5" />
                                 </div>
-                                <Badge variant="outline" className={`text-[8px] font-black uppercase ${member.role === 'Admin' ? 'text-red-500 border-red-500/20 bg-red-500/5' :
-                                        member.role === 'Office Head' ? 'text-blue-500 border-blue-500/20 bg-blue-500/5' :
-                                            'text-green-500 border-green-500/20 bg-green-500/5'
+                                <Badge variant="outline" className={`text-[8px] font-black uppercase ${member.role === 'admin' ? 'text-red-500 border-red-500/20 bg-red-500/5' :
+                                    member.role === 'head' ? 'text-blue-500 border-blue-500/20 bg-blue-500/5' :
+                                        'text-green-500 border-green-500/20 bg-green-500/5'
                                     }`}>
                                     {member.role}
                                 </Badge>

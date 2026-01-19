@@ -17,7 +17,7 @@ export default function PortalLayout({
     // The login page is now the entry point.
 
     return (
-        <RoleGuard allowedRoles={['student', 'parent', 'admin', 'staff', 'agent', 'auditor']}>
+        <RoleGuard allowedRoles={['student', 'staff', 'head', 'admin']}>
             <MainLayout>
                 {children}
             </MainLayout>

@@ -169,20 +169,7 @@ export const mockStudents: StudentProfile[] = Array.from({ length: 100 }, (_, i)
         payments: generatePayments(workflowState, i),
 
         branchId: ['BR01', 'BR02', 'BR03', 'BR04', 'BR05'][i % 5],
-        referralAgentId: i % 5 === 0 ? `AG${String(Math.floor(i / 5) + 1).padStart(2, '0')}` : undefined,
-
-        parentName: `${['Mr.', 'Mrs.'][Math.floor(Math.random() * 2)]} ${lastName}`,
-        parentPhone: `+91 ${8000000000 + Math.floor(Math.random() * 999999999)}`,
     };
 });
-
-// Derived Parent Map for Auth
-export const mockParents = mockStudents.map(student => ({
-    parentId: `PAR${student.id.replace('ST', '')}`,
-    studentId: student.id,
-    name: student.parentName,
-    phone: student.parentPhone,
-    email: `parent.${student.email}`,
-}));
 
 export default mockStudents;

@@ -4,11 +4,8 @@ export type ReportType =
     | 'counseling_status'
     | 'payment_collection'
     | 'document_verification'
-    | 'agent_performance'
+    | 'document_verification'
     | 'branch_comparison'
-    | 'category_wise'
-    | 'state_wise'
-    | 'audit_log';
 
 export type ReportFormat = 'pdf' | 'excel' | 'csv';
 export type ReportStatus = 'pending' | 'generating' | 'completed' | 'failed';

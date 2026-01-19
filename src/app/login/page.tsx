@@ -22,7 +22,7 @@ import { toast } from "sonner";
 import { signIn } from "next-auth/react";
 
 export default function LoginPage() {
-    const [role, setRole] = React.useState<"admin" | "student" | "staff">("admin");
+    const [role, setRole] = React.useState<"admin" | "student" | "staff" | "head">("student");
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
     const [isLoading, setIsLoading] = React.useState(false);
@@ -95,7 +95,6 @@ export default function LoginPage() {
                         <CardContent className="p-8 lg:p-10">
                             <form onSubmit={handleLogin} className="space-y-8">
                                 <div className="space-y-4">
-                                    <Label className="text-xs font-bold uppercase tracking-widest text-muted-foreground ml-1">Access Role</Label>
                                     <div className="grid grid-cols-3 gap-2">
                                         <div
                                             onClick={() => setRole("student")}
@@ -115,17 +114,17 @@ export default function LoginPage() {
                                                 }`}
                                         >
                                             <UserCheck className={`h-5 w-5 ${role === "staff" ? "text-primary" : "text-muted-foreground"}`} />
-                                            <span className={`text-[9px] font-bold uppercase tracking-tight text-center ${role === "staff" ? "text-primary" : "text-muted-foreground"}`}>Office Staff</span>
+                                            <span className={`text-[9px] font-bold uppercase tracking-tight text-center ${role === "staff" ? "text-primary" : "text-muted-foreground"}`}>Staff</span>
                                         </div>
                                         <div
-                                            onClick={() => setRole("admin")}
-                                            className={`p-3 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "admin"
+                                            onClick={() => setRole("head")}
+                                            className={`p-3 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "head"
                                                 ? "bg-primary/20 border-primary shadow-lg shadow-primary/10"
                                                 : "bg-white/5 border-white/10 hover:border-white/20"
                                                 }`}
                                         >
-                                            <Users className={`h-5 w-5 ${role === "admin" ? "text-primary" : "text-muted-foreground"}`} />
-                                            <span className={`text-[9px] font-bold uppercase tracking-tight text-center ${role === "admin" ? "text-primary" : "text-muted-foreground"}`}>Admin</span>
+                                            <ShieldCheck className={`h-5 w-5 ${role === "head" ? "text-primary" : "text-muted-foreground"}`} />
+                                            <span className={`text-[9px] font-bold uppercase tracking-tight text-center ${role === "head" ? "text-primary" : "text-muted-foreground"}`}>Head</span>
                                         </div>
                                     </div>
                                 </div>

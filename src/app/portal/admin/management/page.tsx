@@ -11,7 +11,6 @@ import {
     Zap
 } from "lucide-react"
 import { BulkUpload } from "@/features/admin/components/bulk-upload"
-import { AgencyDashboard } from "@/features/admin/components/agency-dashboard"
 import { StaffManagement } from "@/features/admin/components/staff-management"
 import { FinancialTracker } from "@/features/admin/components/financial-tracker"
 import { StudentMasterTable } from "@/features/admin/components/student-master-table"
@@ -50,9 +49,6 @@ export default function AdminManagementHub() {
                             <TabsTrigger value="financials" className="rounded-xl h-full px-6 gap-2 text-[10px] font-black uppercase tracking-widest data-[state=active]:bg-primary data-[state=active]:text-white">
                                 <BarChart3 className="h-4 w-4" /> Financials
                             </TabsTrigger>
-                            <TabsTrigger value="agencies" className="rounded-xl h-full px-6 gap-2 text-[10px] font-black uppercase tracking-widest data-[state=active]:bg-primary data-[state=active]:text-white">
-                                <Building2 className="h-4 w-4" /> Agencies
-                            </TabsTrigger>
                             <TabsTrigger value="staff" className="rounded-xl h-full px-6 gap-2 text-[10px] font-black uppercase tracking-widest data-[state=active]:bg-primary data-[state=active]:text-white">
                                 <ShieldCheck className="h-4 w-4" /> Security / Staff
                             </TabsTrigger>
@@ -77,9 +73,6 @@ export default function AdminManagementHub() {
                         <FinancialTracker />
                     </TabsContent>
 
-                    <TabsContent value="agencies" className="mt-0 focus-visible:outline-none">
-                        <AgencyDashboard />
-                    </TabsContent>
 
                     <TabsContent value="staff" className="mt-0 focus-visible:outline-none">
                         <StaffManagement />

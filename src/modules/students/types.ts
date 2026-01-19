@@ -138,11 +138,5 @@ export interface StudentProfile {
 
     // References
     branchId: string;
-    referralAgentId?: string;
     assignedStaffId?: string;
-
-    // Parent info
-    parentName?: string;
-    parentPhone?: string;
-    parentEmail?: string;
 }

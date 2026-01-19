@@ -7,7 +7,7 @@ const MOCK_SESSION = {
         name: "Mock Super Admin",
         email: "admin@mock.com",
         image: null,
-        role: "TENANT_OWNER" as const, // Change to "STAFF", "STUDENT", "PARENT" as needed
+        role: "TENANT_OWNER" as const, // Change to "STAFF", "STUDENT", "BRANCH_ADMIN" as needed
         tenantId: "tenant-mock-001",
         branchId: "branch-mock-001",
     },

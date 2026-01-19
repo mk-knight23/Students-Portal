@@ -84,25 +84,6 @@ export const reportTemplates: ReportTemplate[] = [
         ],
         schedulable: false,
     },
-    {
-        id: 'tpl-audit',
-        name: 'Audit Log Report',
-        type: 'audit_log',
-        description: 'System audit logs for compliance and security review',
-        availableFormats: ['pdf', 'csv'],
-        filters: [
-            { id: 'date_range', name: 'Date Range', type: 'date_range', required: true },
-            {
-                id: 'action_type', name: 'Action Type', type: 'multi_select', options: [
-                    { value: 'login', label: 'Login' },
-                    { value: 'view_pii', label: 'View PII' },
-                    { value: 'export_data', label: 'Export Data' },
-                    { value: 'modify_student', label: 'Modify Student' },
-                ], required: false
-            },
-        ],
-        schedulable: false,
-    },
 ];
 
 export const recentReports: GeneratedReport[] = [
@@ -136,17 +117,6 @@ export const recentReports: GeneratedReport[] = [
         filters: { date_range: { from: '2025-10-01', to: '2025-12-31' } },
         recordCount: 892,
         fileSize: 128000,
-    },
-    {
-        id: 'RPT003',
-        templateId: 'tpl-audit',
-        name: 'Audit Log - Weekly',
-        type: 'audit_log',
-        format: 'csv',
-        status: 'generating',
-        requestedBy: 'Compliance Officer',
-        requestedAt: new Date(Date.now() - 5 * 60 * 1000).toISOString(),
-        filters: { date_range: { from: '2026-01-12', to: '2026-01-19' } },
     },
 ];
 

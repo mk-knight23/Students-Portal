@@ -80,7 +80,6 @@ describe('RBAC Permission Checks', () => {
         BRANCH_ADMIN: ['VIEW_BRANCH', 'MANAGE_STAFF', 'VIEW_PAYMENTS'],
         STAFF: ['VIEW_BRANCH', 'REGISTER_STUDENT', 'VERIFY_DOCS'],
         STUDENT: ['VIEW_SELF', 'FILL_PREFERENCES'],
-        PARENT: ['VIEW_CHILD'],
     }
 
     it('should grant TENANT_OWNER full access', () => {
@@ -103,9 +102,4 @@ describe('RBAC Permission Checks', () => {
         expect(permissions).not.toContain('REGISTER_STUDENT')
     })
 
-    it('should restrict PARENT to child view only', () => {
-        const permissions = rolePermissions['PARENT']
-        expect(permissions).toHaveLength(1)
-        expect(permissions[0]).toBe('VIEW_CHILD')
-    })
 })

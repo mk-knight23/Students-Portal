@@ -2,6 +2,7 @@ import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import { StudentProfile as Student, StudentWorkflowState, DocumentSlotState, PaymentState } from '@/modules/students/types'
 import { mockStudents } from '@/modules/students/mock-data'
+import { mockStaff, mockHeads } from '@/modules/staff/mock-data'
 
 export type { Student }
 
@@ -12,25 +13,17 @@ export interface Branch {
     studentCount: number;
 }
 
-export interface Agency {
-    id: string;
-    name: string;
-    contactPerson: string;
-    phone: string;
-    email: string;
-    commissions: number;
-    studentsReferred: number;
-}
+
 
 export interface Staff {
     id: string;
     name: string;
-    role: 'Admin' | 'Office Head' | 'Staff';
+    role: 'admin' | 'head' | 'staff';
     branchId: string;
     email: string;
 }
 
-export type UserRole = 'admin' | 'staff' | 'student' | 'parent' | 'agent' | 'auditor';
+export type UserRole = 'admin' | 'staff' | 'student' | 'head';
 
 export interface Notification {
     id: string;
@@ -45,7 +38,6 @@ export interface Notification {
 interface AppState {
     students: Student[];
     branches: Branch[];
-    agencies: Agency[];
     staff: Staff[];
     notifications: Notification[];
     currentUser: {
@@ -64,8 +56,6 @@ interface AppState {
     logout: () => void;
 
     // Management Actions
-    addAgency: (agency: Agency) => void;
-    updateAgency: (id: string, data: Partial<Agency>) => void;
     addStaff: (staff: Staff) => void;
 
     // Communication Actions
@@ -122,13 +112,10 @@ export const useAppStore = create<AppState>()(
                 { id: "BR02", name: "Pune Center", location: "Pune, Maharashtra", studentCount: 850 },
                 { id: "BR03", name: "Bangalore", location: "Bangalore, KA", studentCount: 420 },
             ],
-            agencies: [
-                { id: "AG01", name: "Global Med Ed", contactPerson: "Rajesh Kumar", phone: "+91 99887 76655", email: "rajesh@globalmed.com", commissions: 45000, studentsReferred: 12 },
-                { id: "AG02", name: "Elite Admissions", contactPerson: "Anita Deshpande", phone: "+91 88776 65544", email: "anita@elite.com", commissions: 32000, studentsReferred: 8 },
-            ],
             staff: [
-                { id: "STF01", name: "Priya Sharma", role: "Office Head", branchId: "BR01", email: "priya@ame.com" },
-                { id: "STF02", name: "Rahul Verma", role: "Staff", branchId: "BR01", email: "rahul@ame.com" },
+                ...mockStaff,
+                ...mockHeads,
+                { id: "ADM001", name: "Super Admin", role: "admin", branchId: "Global", email: "admin@ame.com" }
             ],
             notifications: [
                 { id: "NT01", title: "K-EA Portal Open", message: "Karnataka state preferences are now live.", type: "Info", date: new Date().toISOString(), read: false },
@@ -178,10 +165,6 @@ export const useAppStore = create<AppState>()(
 
             logout: () => set({ currentUser: null }),
 
-            addAgency: (agency) => set((state) => ({ agencies: [...state.agencies, agency] })),
-            updateAgency: (id, data) => set((state) => ({
-                agencies: state.agencies.map((a) => (a.id === id ? { ...a, ...data } : a))
-            })),
             addStaff: (staff) => set((state) => ({ staff: [...state.staff, staff] })),
 
             addNotification: (n) => set((state) => ({
@@ -195,13 +178,10 @@ export const useAppStore = create<AppState>()(
             })),
 
             login: (role) => set(() => {
-                // Pick a student in 'counseling' stage for a better demo experience (more data populated)
+                // Pick a student in 'counseling' stage for a better demo experience
                 const demoStudent = mockStudents.find(s => s.workflowState === 'counseling') || mockStudents[0];
-                const demoParent = {
-                    id: `PAR${demoStudent.id}`,
-                    name: demoStudent.parentName || 'Parent',
-                    role: 'parent' as UserRole
-                };
+                const demoStaff = mockStaff[0];
+                const demoHead = mockHeads[0];
 
                 const mockUsers: Record<UserRole, AppState['currentUser']> = {
                     student: {
@@ -210,11 +190,19 @@ export const useAppStore = create<AppState>()(
                         role: "student",
                         branchId: demoStudent.branchId
                     },
-                    parent: demoParent,
                     admin: { id: "ADM001", name: "Super Admin", role: "admin" },
-                    staff: { id: "STF01", name: "Priya Sharma", role: "staff", branchId: "BR01" },
-                    agent: { id: "AG01", name: "Rajesh Kumar", role: "agent" },
-                    auditor: { id: "AUD001", name: "Vikram Singh", role: "auditor" }
+                    staff: {
+                        id: demoStaff.id,
+                        name: demoStaff.name,
+                        role: "staff",
+                        branchId: demoStaff.branchId
+                    },
+                    head: {
+                        id: demoHead.id,
+                        name: demoHead.name,
+                        role: "head",
+                        branchId: demoHead.branchId
+                    }
                 };
                 return { currentUser: mockUsers[role] };
             }),

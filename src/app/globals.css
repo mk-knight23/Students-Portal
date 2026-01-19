@@ -144,36 +144,20 @@
   .glass-dark {
     @apply bg-black/40 backdrop-blur-lg border border-white/5 shadow-2xl;
   }
-  .glass-card {
-    @apply bg-card/40 backdrop-blur-sm border border-border/50 transition-all duration-300 hover:bg-card/60 hover:shadow-lg hover:border-border;
-  }
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-chart-2;
-  }
-  
-  /* Role-based theming */
   .portal-student {
     --primary: oklch(0.7 0.2 264);
-    --primary-foreground: oklch(0.985 0 0);
-  }
-  .portal-parent {
-    --primary: oklch(0.65 0.2 180);
-    --primary-foreground: oklch(0.985 0 0);
-  }
-  .portal-admin {
-    --primary: oklch(0.6 0.2 0);
     --primary-foreground: oklch(0.985 0 0);
   }
   .portal-staff {
     --primary: oklch(0.65 0.15 40);
     --primary-foreground: oklch(0.985 0 0);
   }
-  .portal-agent {
-    --primary: oklch(0.7 0.2 140);
+  .portal-head {
+    --primary: oklch(0.6 0.18 220);
     --primary-foreground: oklch(0.985 0 0);
   }
-  .portal-auditor {
-    --primary: oklch(0.5 0.1 280);
+  .portal-admin {
+    --primary: oklch(0.6 0.2 0);
     --primary-foreground: oklch(0.985 0 0);
   }
   

@@ -4,7 +4,7 @@ import { useAppStore } from "@/store/useAppStore"
 import { useEffect } from "react"
 import { RoleGuard } from "@/components/auth/role-guard"
 
-export default function AdminPortalLayout({
+export default function HeadPortalLayout({
     children,
 }: {
     children: React.ReactNode
@@ -12,18 +12,19 @@ export default function AdminPortalLayout({
     const { setCurrentUser, currentUser } = useAppStore();
 
     useEffect(() => {
-        // Set admin role for this portal section
-        if (!currentUser || currentUser.role !== 'admin') {
+        // Set head role for this portal section
+        if (!currentUser || currentUser.role !== 'head') {
             setCurrentUser({
-                id: "ADM001",
-                name: "Super Admin",
-                role: "admin"
+                id: "HED001",
+                name: "Vikram Patil",
+                role: "head",
+                branchId: "BR01"
             });
         }
     }, [currentUser, setCurrentUser]);
 
     return (
-        <RoleGuard allowedRoles={['admin']}>
+        <RoleGuard allowedRoles={['head']}>
             {children}
         </RoleGuard>
     )

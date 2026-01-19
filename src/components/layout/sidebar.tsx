@@ -45,38 +45,26 @@ const menuConfigs: Record<UserRole, { icon: typeof LayoutDashboard; label: strin
     { icon: FileCheck, label: "Verifications", href: "/portal/staff/verifications" },
     { icon: CreditCard, label: "Payments", href: "/portal/staff/payments" },
   ],
+  head: [
+    { icon: LayoutDashboard, label: "Dashboard", href: "/portal/head/dashboard" },
+    { icon: Users, label: "Students", href: "/portal/head/students" },
+    { icon: FileCheck, label: "Verifications", href: "/portal/head/verifications" },
+    { icon: CreditCard, label: "Payments", href: "/portal/head/payments" },
+    { icon: BarChart3, label: "Reports", href: "/portal/head/reports" },
+  ],
   student: [
     { icon: LayoutDashboard, label: "Dashboard", href: "/portal/student/dashboard" },
     { icon: FileText, label: "Documents", href: "/portal/student/documents" },
     { icon: GraduationCap, label: "Counseling", href: "/portal/student/counseling" },
     { icon: CreditCard, label: "Payments", href: "/portal/student/payments" },
   ],
-  parent: [
-    { icon: LayoutDashboard, label: "Dashboard", href: "/portal/parent/dashboard" },
-    { icon: FileText, label: "Documents", href: "/portal/parent/documents" },
-    { icon: CreditCard, label: "Fee Status", href: "/portal/parent/payments" },
-  ],
-  agent: [
-    { icon: LayoutDashboard, label: "Dashboard", href: "/portal/agent/dashboard" },
-    { icon: Users, label: "Referrals", href: "/portal/agent/referrals" },
-    { icon: Briefcase, label: "Commissions", href: "/portal/agent/commissions" },
-    { icon: BarChart3, label: "Performance", href: "/portal/agent/performance" },
-  ],
-  auditor: [
-    { icon: LayoutDashboard, label: "Dashboard", href: "/portal/auditor/dashboard" },
-    { icon: Eye, label: "Audit Logs", href: "/portal/auditor/logs" },
-    { icon: ShieldCheck, label: "Compliance", href: "/portal/auditor/compliance" },
-    { icon: FileText, label: "Reports", href: "/portal/auditor/reports" },
-  ],
 };
 
 const roleLabels: Record<UserRole, string> = {
-  admin: 'Administrator',
-  staff: 'Staff',
+  admin: 'Super Admin',
+  staff: 'Branch Staff',
   student: 'Student',
-  parent: 'Parent',
-  agent: 'Partner Agent',
-  auditor: 'Auditor',
+  head: 'Branch Head',
 };
 
 export function SidebarContent({ isCollapsed = false, onMobileClose }: { isCollapsed?: boolean; onMobileClose?: () => void }) {
@@ -95,7 +83,7 @@ export function SidebarContent({ isCollapsed = false, onMobileClose }: { isColla
           {!isCollapsed && (
             <div className="flex flex-col text-left">
               <span className="font-bold text-lg tracking-tight italic leading-none text-foreground">AME.OS</span>
-              <span className="text-[7px] font-bold uppercase tracking-[0.2em] text-primary/60 mt-0.5">v0.3.2</span>
+              <span className="text-[7px] font-bold uppercase tracking-[0.2em] text-primary/60 mt-0.5">v0.0.3</span>
             </div>
           )}
         </div>
