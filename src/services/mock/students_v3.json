@@ -1,0 +1,4228 @@
+[
+  {
+    "id": "ST2026001",
+    "name": "Rohan Shinde",
+    "email": "rohan.shinde1@example.com",
+    "phone": "+91 90001 10001",
+    "gender": "Female",
+    "dob": "2005-08-24",
+    "aadhaar_masked": "XXXX XXXX 1001",
+    "apaar_id": "APAAR88000001",
+    "category": "General",
+    "neet_score": 570,
+    "neet_rank": 12120,
+    "state": "Maharashtra",
+    "status": "Application",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-10T08:24:25.354Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.90205874596036
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 94.56016040995323
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260001",
+        "score": 694,
+        "rank": 28619
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026002",
+    "name": "Aditya Chavan",
+    "email": "aditya.chavan2@example.com",
+    "phone": "+91 90002 10002",
+    "gender": "Male",
+    "dob": "2006-12-03",
+    "aadhaar_masked": "XXXX XXXX 1002",
+    "apaar_id": "APAAR88000002",
+    "category": "VJNT",
+    "neet_score": 623,
+    "neet_rank": 44054,
+    "state": "Uttar Pradesh",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-07T15:36:25.626Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 94.85922798405636
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 88.30221036927404
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260002",
+        "score": 527,
+        "rank": 43301
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026003",
+    "name": "Siddhesh Pawar",
+    "email": "siddhesh.pawar3@example.com",
+    "phone": "+91 90003 10003",
+    "gender": "Female",
+    "dob": "2005-05-28",
+    "aadhaar_masked": "XXXX XXXX 1003",
+    "apaar_id": "APAAR88000003",
+    "category": "SC",
+    "neet_score": 548,
+    "neet_rank": 8189,
+    "state": "Kerala",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-11T00:13:14.524Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.54866601770851
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 86.9863183407396
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260003",
+        "score": 421,
+        "rank": 11198
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026004",
+    "name": "Vikram More",
+    "email": "vikram.more4@example.com",
+    "phone": "+91 90004 10004",
+    "gender": "Male",
+    "dob": "2007-12-23",
+    "aadhaar_masked": "XXXX XXXX 1004",
+    "apaar_id": "APAAR88000004",
+    "category": "SC",
+    "neet_score": 572,
+    "neet_rank": 12092,
+    "state": "Kerala",
+    "status": "Counseling",
+    "documents_verified": true,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-08T14:05:17.453Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 85.80917255440987
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 84.25664465530481
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260004",
+        "score": 446,
+        "rank": 46234
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026005",
+    "name": "Priya Jadhav",
+    "email": "priya.jadhav5@example.com",
+    "phone": "+91 90005 10005",
+    "gender": "Male",
+    "dob": "2005-09-09",
+    "aadhaar_masked": "XXXX XXXX 1005",
+    "apaar_id": "APAAR88000005",
+    "category": "General",
+    "neet_score": 548,
+    "neet_rank": 50575,
+    "state": "Karnataka",
+    "status": "Application",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-16T15:55:41.993Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 94.12087342166532
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 93.42507160327067
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260005",
+        "score": 478,
+        "rank": 35375
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026006",
+    "name": "Siddhesh Deshmukh",
+    "email": "siddhesh.deshmukh6@example.com",
+    "phone": "+91 90006 10006",
+    "gender": "Female",
+    "dob": "2006-05-10",
+    "aadhaar_masked": "XXXX XXXX 1006",
+    "apaar_id": "APAAR88000006",
+    "category": "VJNT",
+    "neet_score": 452,
+    "neet_rank": 45782,
+    "state": "Kerala",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-16T10:39:41.013Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 87.78880670379905
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 89.7551027429773
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260006",
+        "score": 494,
+        "rank": 47462
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026007",
+    "name": "Anjali Kulkarni",
+    "email": "anjali.kulkarni7@example.com",
+    "phone": "+91 90007 10007",
+    "gender": "Female",
+    "dob": "2005-08-04",
+    "aadhaar_masked": "XXXX XXXX 1007",
+    "apaar_id": "APAAR88000007",
+    "category": "EWS",
+    "neet_score": 670,
+    "neet_rank": 14913,
+    "state": "Uttar Pradesh",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-14T11:43:22.819Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.89609005651351
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 81.68185192637996
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260007",
+        "score": 499,
+        "rank": 31867
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY701",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026008",
+    "name": "Sneha Suryavanshi",
+    "email": "sneha.suryavanshi8@example.com",
+    "phone": "+91 90008 10008",
+    "gender": "Female",
+    "dob": "2006-06-27",
+    "aadhaar_masked": "XXXX XXXX 1008",
+    "apaar_id": "APAAR88000008",
+    "category": "EWS",
+    "neet_score": 607,
+    "neet_rank": 10298,
+    "state": "Uttar Pradesh",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-11T15:20:49.532Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.19500444945757
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 88.55354408527421
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260008",
+        "score": 481,
+        "rank": 37408
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026009",
+    "name": "Rohan Chavan",
+    "email": "rohan.chavan9@example.com",
+    "phone": "+91 90009 10009",
+    "gender": "Female",
+    "dob": "2005-02-17",
+    "aadhaar_masked": "XXXX XXXX 1009",
+    "apaar_id": "APAAR88000009",
+    "category": "ST",
+    "neet_score": 439,
+    "neet_rank": 5694,
+    "state": "Karnataka",
+    "status": "Counseling",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-16T00:29:36.306Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.38652793359188
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 81.86435084655942
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260009",
+        "score": 587,
+        "rank": 43830
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026010",
+    "name": "Sneha Patil",
+    "email": "sneha.patil10@example.com",
+    "phone": "+91 90010 10010",
+    "gender": "Male",
+    "dob": "2006-04-05",
+    "aadhaar_masked": "XXXX XXXX 1010",
+    "apaar_id": "APAAR88000010",
+    "category": "EWS",
+    "neet_score": 569,
+    "neet_rank": 37928,
+    "state": "Maharashtra",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-09T09:55:46.502Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 87.6039482998416
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 92.72122072558012
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260010",
+        "score": 575,
+        "rank": 31543
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026011",
+    "name": "Sayali Gaikwad",
+    "email": "sayali.gaikwad11@example.com",
+    "phone": "+91 90011 10011",
+    "gender": "Female",
+    "dob": "2006-01-10",
+    "aadhaar_masked": "XXXX XXXX 1011",
+    "apaar_id": "APAAR88000011",
+    "category": "SC",
+    "neet_score": 537,
+    "neet_rank": 35568,
+    "state": "Uttar Pradesh",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-09T18:42:36.499Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.93237771900004
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 90.49782370610914
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260011",
+        "score": 689,
+        "rank": 9385
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026012",
+    "name": "Pooja Shinde",
+    "email": "pooja.shinde12@example.com",
+    "phone": "+91 90012 10012",
+    "gender": "Female",
+    "dob": "2005-07-26",
+    "aadhaar_masked": "XXXX XXXX 1012",
+    "apaar_id": "APAAR88000012",
+    "category": "OBC",
+    "neet_score": 465,
+    "neet_rank": 2549,
+    "state": "Maharashtra",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-12T03:54:50.123Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.21224512951528
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 90.49499690383449
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260012",
+        "score": 458,
+        "rank": 30089
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026013",
+    "name": "Rohan More",
+    "email": "rohan.more13@example.com",
+    "phone": "+91 90013 10013",
+    "gender": "Female",
+    "dob": "2007-01-07",
+    "aadhaar_masked": "XXXX XXXX 1013",
+    "apaar_id": "APAAR88000013",
+    "category": "EWS",
+    "neet_score": 540,
+    "neet_rank": 36199,
+    "state": "Karnataka",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-07T18:46:07.416Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 94.18782668149423
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 86.35001447671422
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260013",
+        "score": 463,
+        "rank": 27300
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026014",
+    "name": "Rahul Deshmukh",
+    "email": "rahul.deshmukh14@example.com",
+    "phone": "+91 90014 10014",
+    "gender": "Male",
+    "dob": "2006-05-24",
+    "aadhaar_masked": "XXXX XXXX 1014",
+    "apaar_id": "APAAR88000014",
+    "category": "OBC",
+    "neet_score": 558,
+    "neet_rank": 26528,
+    "state": "Karnataka",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-18T15:53:41.739Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.07462457749774
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 80.7261253144596
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260014",
+        "score": 544,
+        "rank": 14326
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026015",
+    "name": "Aditya Gaikwad",
+    "email": "aditya.gaikwad15@example.com",
+    "phone": "+91 90015 10015",
+    "gender": "Male",
+    "dob": "2006-06-06",
+    "aadhaar_masked": "XXXX XXXX 1015",
+    "apaar_id": "APAAR88000015",
+    "category": "ST",
+    "neet_score": 618,
+    "neet_rank": 9809,
+    "state": "Kerala",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-10T05:46:41.103Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.8279831892821
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 80.37391804932292
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260015",
+        "score": 495,
+        "rank": 5451
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026016",
+    "name": "Pooja Pawar",
+    "email": "pooja.pawar16@example.com",
+    "phone": "+91 90016 10016",
+    "gender": "Male",
+    "dob": "2007-07-08",
+    "aadhaar_masked": "XXXX XXXX 1016",
+    "apaar_id": "APAAR88000016",
+    "category": "OBC",
+    "neet_score": 463,
+    "neet_rank": 38674,
+    "state": "Uttar Pradesh",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-11T00:01:52.131Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.68569075309998
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 92.63301429506187
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260016",
+        "score": 589,
+        "rank": 12720
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY1601",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026017",
+    "name": "Sneha Deshmukh",
+    "email": "sneha.deshmukh17@example.com",
+    "phone": "+91 90017 10017",
+    "gender": "Male",
+    "dob": "2005-04-28",
+    "aadhaar_masked": "XXXX XXXX 1017",
+    "apaar_id": "APAAR88000017",
+    "category": "SC",
+    "neet_score": 422,
+    "neet_rank": 2168,
+    "state": "Kerala",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-13T11:02:28.313Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 88.93725051720725
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 94.03925946918613
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260017",
+        "score": 496,
+        "rank": 12097
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026018",
+    "name": "Rahul Patil",
+    "email": "rahul.patil18@example.com",
+    "phone": "+91 90018 10018",
+    "gender": "Female",
+    "dob": "2005-09-23",
+    "aadhaar_masked": "XXXX XXXX 1018",
+    "apaar_id": "APAAR88000018",
+    "category": "General",
+    "neet_score": 567,
+    "neet_rank": 36444,
+    "state": "Kerala",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-18T08:02:40.420Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.79539880515652
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 86.10660064789545
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260018",
+        "score": 445,
+        "rank": 1705
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026019",
+    "name": "Pooja Gaikwad",
+    "email": "pooja.gaikwad19@example.com",
+    "phone": "+91 90019 10019",
+    "gender": "Male",
+    "dob": "2005-07-14",
+    "aadhaar_masked": "XXXX XXXX 1019",
+    "apaar_id": "APAAR88000019",
+    "category": "SC",
+    "neet_score": 584,
+    "neet_rank": 10492,
+    "state": "Uttar Pradesh",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-12T10:51:27.645Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.82212665880888
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 84.59404199099073
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260019",
+        "score": 414,
+        "rank": 38021
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY1901",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026020",
+    "name": "Sneha Kulkarni",
+    "email": "sneha.kulkarni20@example.com",
+    "phone": "+91 90020 10020",
+    "gender": "Male",
+    "dob": "2005-04-08",
+    "aadhaar_masked": "XXXX XXXX 1020",
+    "apaar_id": "APAAR88000020",
+    "category": "OBC",
+    "neet_score": 532,
+    "neet_rank": 20736,
+    "state": "Kerala",
+    "status": "Verification",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-11T08:56:13.534Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 85.87818725984536
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 83.43481452387446
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260020",
+        "score": 636,
+        "rank": 2852
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026021",
+    "name": "Aditya Deshmukh",
+    "email": "aditya.deshmukh21@example.com",
+    "phone": "+91 90021 10021",
+    "gender": "Female",
+    "dob": "2005-07-13",
+    "aadhaar_masked": "XXXX XXXX 1021",
+    "apaar_id": "APAAR88000021",
+    "category": "SC",
+    "neet_score": 596,
+    "neet_rank": 35042,
+    "state": "Uttar Pradesh",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-13T00:12:59.262Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.1369889290144
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 82.46219836737865
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260021",
+        "score": 480,
+        "rank": 12931
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026022",
+    "name": "Rohan Suryavanshi",
+    "email": "rohan.suryavanshi22@example.com",
+    "phone": "+91 90022 10022",
+    "gender": "Female",
+    "dob": "2006-10-04",
+    "aadhaar_masked": "XXXX XXXX 1022",
+    "apaar_id": "APAAR88000022",
+    "category": "VJNT",
+    "neet_score": 481,
+    "neet_rank": 36893,
+    "state": "Kerala",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-10T16:28:41.441Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.09532426758986
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 80.72639973446523
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260022",
+        "score": 489,
+        "rank": 28666
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY2201",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026023",
+    "name": "Rohan Chavan",
+    "email": "rohan.chavan23@example.com",
+    "phone": "+91 90023 10023",
+    "gender": "Male",
+    "dob": "2006-11-10",
+    "aadhaar_masked": "XXXX XXXX 1023",
+    "apaar_id": "APAAR88000023",
+    "category": "VJNT",
+    "neet_score": 686,
+    "neet_rank": 26051,
+    "state": "Uttar Pradesh",
+    "status": "Verification",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-17T06:50:21.145Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 85.08038361083688
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 83.32255255463781
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260023",
+        "score": 487,
+        "rank": 24634
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026024",
+    "name": "Rohan Chavan",
+    "email": "rohan.chavan24@example.com",
+    "phone": "+91 90024 10024",
+    "gender": "Female",
+    "dob": "2007-12-07",
+    "aadhaar_masked": "XXXX XXXX 1024",
+    "apaar_id": "APAAR88000024",
+    "category": "EWS",
+    "neet_score": 599,
+    "neet_rank": 36815,
+    "state": "Maharashtra",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-15T20:03:05.710Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 94.88423109373885
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 84.00870254947128
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260024",
+        "score": 417,
+        "rank": 2611
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026025",
+    "name": "Rohan Deshmukh",
+    "email": "rohan.deshmukh25@example.com",
+    "phone": "+91 90025 10025",
+    "gender": "Male",
+    "dob": "2005-05-12",
+    "aadhaar_masked": "XXXX XXXX 1025",
+    "apaar_id": "APAAR88000025",
+    "category": "OBC",
+    "neet_score": 693,
+    "neet_rank": 44975,
+    "state": "Uttar Pradesh",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-17T09:20:15.744Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.53450040552836
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 80.63828507278143
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260025",
+        "score": 630,
+        "rank": 42859
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY2501",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026026",
+    "name": "Sneha Chavan",
+    "email": "sneha.chavan26@example.com",
+    "phone": "+91 90026 10026",
+    "gender": "Female",
+    "dob": "2006-02-12",
+    "aadhaar_masked": "XXXX XXXX 1026",
+    "apaar_id": "APAAR88000026",
+    "category": "OBC",
+    "neet_score": 481,
+    "neet_rank": 18745,
+    "state": "Uttar Pradesh",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-12T04:21:37.555Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.42262422706273
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 93.64537322973176
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260026",
+        "score": 679,
+        "rank": 23666
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026027",
+    "name": "Siddhesh More",
+    "email": "siddhesh.more27@example.com",
+    "phone": "+91 90027 10027",
+    "gender": "Female",
+    "dob": "2005-07-14",
+    "aadhaar_masked": "XXXX XXXX 1027",
+    "apaar_id": "APAAR88000027",
+    "category": "General",
+    "neet_score": 472,
+    "neet_rank": 21705,
+    "state": "Maharashtra",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-18T03:14:37.327Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 86.00801156902554
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 88.24267418966745
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260027",
+        "score": 460,
+        "rank": 14271
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026028",
+    "name": "Priya Chavan",
+    "email": "priya.chavan28@example.com",
+    "phone": "+91 90028 10028",
+    "gender": "Male",
+    "dob": "2007-01-23",
+    "aadhaar_masked": "XXXX XXXX 1028",
+    "apaar_id": "APAAR88000028",
+    "category": "OBC",
+    "neet_score": 568,
+    "neet_rank": 22560,
+    "state": "Maharashtra",
+    "status": "Verification",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-12T22:28:44.475Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 88.35385405160633
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 90.74954701790988
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260028",
+        "score": 686,
+        "rank": 16147
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026029",
+    "name": "Siddhesh Chavan",
+    "email": "siddhesh.chavan29@example.com",
+    "phone": "+91 90029 10029",
+    "gender": "Male",
+    "dob": "2007-02-21",
+    "aadhaar_masked": "XXXX XXXX 1029",
+    "apaar_id": "APAAR88000029",
+    "category": "VJNT",
+    "neet_score": 452,
+    "neet_rank": 30289,
+    "state": "Uttar Pradesh",
+    "status": "Counseling",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-13T21:34:59.140Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 88.74772518694704
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 87.0591169367696
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260029",
+        "score": 644,
+        "rank": 40803
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026030",
+    "name": "Anjali Kulkarni",
+    "email": "anjali.kulkarni30@example.com",
+    "phone": "+91 90030 10030",
+    "gender": "Female",
+    "dob": "2007-07-16",
+    "aadhaar_masked": "XXXX XXXX 1030",
+    "apaar_id": "APAAR88000030",
+    "category": "EWS",
+    "neet_score": 645,
+    "neet_rank": 15708,
+    "state": "Uttar Pradesh",
+    "status": "Verification",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-10T07:18:52.050Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 88.55761746540325
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 86.93570954963546
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260030",
+        "score": 617,
+        "rank": 49024
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026031",
+    "name": "Aditya Pawar",
+    "email": "aditya.pawar31@example.com",
+    "phone": "+91 90031 10031",
+    "gender": "Female",
+    "dob": "2007-02-22",
+    "aadhaar_masked": "XXXX XXXX 1031",
+    "apaar_id": "APAAR88000031",
+    "category": "General",
+    "neet_score": 498,
+    "neet_rank": 2518,
+    "state": "Uttar Pradesh",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-16T18:05:59.660Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.60760539881906
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 83.88399371168207
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260031",
+        "score": 607,
+        "rank": 5120
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY3101",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026032",
+    "name": "Pooja Patil",
+    "email": "pooja.patil32@example.com",
+    "phone": "+91 90032 10032",
+    "gender": "Female",
+    "dob": "2007-01-28",
+    "aadhaar_masked": "XXXX XXXX 1032",
+    "apaar_id": "APAAR88000032",
+    "category": "EWS",
+    "neet_score": 598,
+    "neet_rank": 32307,
+    "state": "Uttar Pradesh",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-10T15:18:12.324Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.4137246505105
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 84.4771936258143
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260032",
+        "score": 569,
+        "rank": 15386
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026033",
+    "name": "Rahul Gaikwad",
+    "email": "rahul.gaikwad33@example.com",
+    "phone": "+91 90033 10033",
+    "gender": "Male",
+    "dob": "2006-09-03",
+    "aadhaar_masked": "XXXX XXXX 1033",
+    "apaar_id": "APAAR88000033",
+    "category": "ST",
+    "neet_score": 522,
+    "neet_rank": 34705,
+    "state": "Uttar Pradesh",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-11T05:24:15.246Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 89.58941151068954
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 85.3236048605708
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260033",
+        "score": 640,
+        "rank": 9810
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026034",
+    "name": "Rahul Patil",
+    "email": "rahul.patil34@example.com",
+    "phone": "+91 90034 10034",
+    "gender": "Male",
+    "dob": "2006-08-24",
+    "aadhaar_masked": "XXXX XXXX 1034",
+    "apaar_id": "APAAR88000034",
+    "category": "ST",
+    "neet_score": 488,
+    "neet_rank": 2612,
+    "state": "Uttar Pradesh",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-15T09:55:15.565Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.33095577799334
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 93.40983311218535
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260034",
+        "score": 449,
+        "rank": 34356
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026035",
+    "name": "Pooja Kulkarni",
+    "email": "pooja.kulkarni35@example.com",
+    "phone": "+91 90035 10035",
+    "gender": "Female",
+    "dob": "2007-05-18",
+    "aadhaar_masked": "XXXX XXXX 1035",
+    "apaar_id": "APAAR88000035",
+    "category": "OBC",
+    "neet_score": 629,
+    "neet_rank": 42960,
+    "state": "Karnataka",
+    "status": "Verification",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-14T14:26:17.664Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.44822601483304
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 91.11044701865431
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260035",
+        "score": 579,
+        "rank": 43951
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026036",
+    "name": "Aditya Pawar",
+    "email": "aditya.pawar36@example.com",
+    "phone": "+91 90036 10036",
+    "gender": "Female",
+    "dob": "2006-05-06",
+    "aadhaar_masked": "XXXX XXXX 1036",
+    "apaar_id": "APAAR88000036",
+    "category": "VJNT",
+    "neet_score": 508,
+    "neet_rank": 41004,
+    "state": "Kerala",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-08T10:48:46.552Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 88.15858774853241
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 89.82524651171424
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260036",
+        "score": 607,
+        "rank": 30663
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026037",
+    "name": "Rahul Jadhav",
+    "email": "rahul.jadhav37@example.com",
+    "phone": "+91 90037 10037",
+    "gender": "Male",
+    "dob": "2005-03-24",
+    "aadhaar_masked": "XXXX XXXX 1037",
+    "apaar_id": "APAAR88000037",
+    "category": "EWS",
+    "neet_score": 422,
+    "neet_rank": 27938,
+    "state": "Uttar Pradesh",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-10T08:21:50.747Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.28776073593018
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 82.32407370330263
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260037",
+        "score": 573,
+        "rank": 17937
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026038",
+    "name": "Rohan Kulkarni",
+    "email": "rohan.kulkarni38@example.com",
+    "phone": "+91 90038 10038",
+    "gender": "Female",
+    "dob": "2006-11-18",
+    "aadhaar_masked": "XXXX XXXX 1038",
+    "apaar_id": "APAAR88000038",
+    "category": "VJNT",
+    "neet_score": 457,
+    "neet_rank": 24239,
+    "state": "Uttar Pradesh",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-17T07:32:18.068Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 86.15903407929459
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 90.00663807726187
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260038",
+        "score": 442,
+        "rank": 4747
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026039",
+    "name": "Siddhesh Jadhav",
+    "email": "siddhesh.jadhav39@example.com",
+    "phone": "+91 90039 10039",
+    "gender": "Male",
+    "dob": "2007-12-01",
+    "aadhaar_masked": "XXXX XXXX 1039",
+    "apaar_id": "APAAR88000039",
+    "category": "SC",
+    "neet_score": 493,
+    "neet_rank": 23057,
+    "state": "Maharashtra",
+    "status": "Counseling",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-15T02:29:42.249Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.0273704546769
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 89.48219052126481
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260039",
+        "score": 611,
+        "rank": 21540
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026040",
+    "name": "Anjali Shinde",
+    "email": "anjali.shinde40@example.com",
+    "phone": "+91 90040 10040",
+    "gender": "Female",
+    "dob": "2006-11-07",
+    "aadhaar_masked": "XXXX XXXX 1040",
+    "apaar_id": "APAAR88000040",
+    "category": "General",
+    "neet_score": 552,
+    "neet_rank": 14778,
+    "state": "Kerala",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-15T08:10:05.164Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.2184514465728
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 83.53137624169996
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260040",
+        "score": 468,
+        "rank": 7238
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026041",
+    "name": "Pooja More",
+    "email": "pooja.more41@example.com",
+    "phone": "+91 90041 10041",
+    "gender": "Male",
+    "dob": "2006-08-03",
+    "aadhaar_masked": "XXXX XXXX 1041",
+    "apaar_id": "APAAR88000041",
+    "category": "General",
+    "neet_score": 526,
+    "neet_rank": 7836,
+    "state": "Uttar Pradesh",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-13T16:30:03.803Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.60203687981902
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 84.96897732508576
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260041",
+        "score": 613,
+        "rank": 45116
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026042",
+    "name": "Pooja Kulkarni",
+    "email": "pooja.kulkarni42@example.com",
+    "phone": "+91 90042 10042",
+    "gender": "Female",
+    "dob": "2005-07-11",
+    "aadhaar_masked": "XXXX XXXX 1042",
+    "apaar_id": "APAAR88000042",
+    "category": "General",
+    "neet_score": 501,
+    "neet_rank": 25925,
+    "state": "Kerala",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-08T13:29:01.584Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 89.26282402640558
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 87.89239108707753
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260042",
+        "score": 514,
+        "rank": 46313
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026043",
+    "name": "Rahul More",
+    "email": "rahul.more43@example.com",
+    "phone": "+91 90043 10043",
+    "gender": "Male",
+    "dob": "2006-10-01",
+    "aadhaar_masked": "XXXX XXXX 1043",
+    "apaar_id": "APAAR88000043",
+    "category": "VJNT",
+    "neet_score": 533,
+    "neet_rank": 10311,
+    "state": "Kerala",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-08T10:29:46.291Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.02260666532736
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 88.96650809323314
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260043",
+        "score": 564,
+        "rank": 37648
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY4301",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026044",
+    "name": "Rohan More",
+    "email": "rohan.more44@example.com",
+    "phone": "+91 90044 10044",
+    "gender": "Male",
+    "dob": "2007-10-05",
+    "aadhaar_masked": "XXXX XXXX 1044",
+    "apaar_id": "APAAR88000044",
+    "category": "ST",
+    "neet_score": 426,
+    "neet_rank": 2573,
+    "state": "Kerala",
+    "status": "Counseling",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-08T22:56:47.519Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 86.27292727336818
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 85.34027921988344
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260044",
+        "score": 686,
+        "rank": 26069
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026045",
+    "name": "Aditya Shinde",
+    "email": "aditya.shinde45@example.com",
+    "phone": "+91 90045 10045",
+    "gender": "Female",
+    "dob": "2006-05-03",
+    "aadhaar_masked": "XXXX XXXX 1045",
+    "apaar_id": "APAAR88000045",
+    "category": "SC",
+    "neet_score": 598,
+    "neet_rank": 19697,
+    "state": "Karnataka",
+    "status": "Application",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-12T23:54:59.345Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.2852330499679
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 85.91065229809074
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260045",
+        "score": 695,
+        "rank": 9413
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026046",
+    "name": "Anjali Deshmukh",
+    "email": "anjali.deshmukh46@example.com",
+    "phone": "+91 90046 10046",
+    "gender": "Female",
+    "dob": "2007-07-08",
+    "aadhaar_masked": "XXXX XXXX 1046",
+    "apaar_id": "APAAR88000046",
+    "category": "EWS",
+    "neet_score": 511,
+    "neet_rank": 16653,
+    "state": "Kerala",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-08T23:17:23.488Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.02873230599083
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 90.26094077924014
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260046",
+        "score": 586,
+        "rank": 23652
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026047",
+    "name": "Sayali Kulkarni",
+    "email": "sayali.kulkarni47@example.com",
+    "phone": "+91 90047 10047",
+    "gender": "Female",
+    "dob": "2007-01-25",
+    "aadhaar_masked": "XXXX XXXX 1047",
+    "apaar_id": "APAAR88000047",
+    "category": "General",
+    "neet_score": 528,
+    "neet_rank": 34045,
+    "state": "Karnataka",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-18T22:32:50.441Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 88.66517895358227
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 90.5105362693035
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260047",
+        "score": 525,
+        "rank": 19057
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026048",
+    "name": "Vikram Chavan",
+    "email": "vikram.chavan48@example.com",
+    "phone": "+91 90048 10048",
+    "gender": "Male",
+    "dob": "2006-10-13",
+    "aadhaar_masked": "XXXX XXXX 1048",
+    "apaar_id": "APAAR88000048",
+    "category": "OBC",
+    "neet_score": 519,
+    "neet_rank": 23801,
+    "state": "Kerala",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-11T06:37:33.796Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.08423727492021
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 92.18044737128334
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260048",
+        "score": 544,
+        "rank": 46539
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY4801",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026049",
+    "name": "Siddhesh Chavan",
+    "email": "siddhesh.chavan49@example.com",
+    "phone": "+91 90049 10049",
+    "gender": "Female",
+    "dob": "2005-09-15",
+    "aadhaar_masked": "XXXX XXXX 1049",
+    "apaar_id": "APAAR88000049",
+    "category": "ST",
+    "neet_score": 545,
+    "neet_rank": 9266,
+    "state": "Maharashtra",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-16T07:31:38.198Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 89.40600526829844
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 85.48588531103249
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260049",
+        "score": 571,
+        "rank": 31284
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026050",
+    "name": "Sneha Kulkarni",
+    "email": "sneha.kulkarni50@example.com",
+    "phone": "+91 90050 10050",
+    "gender": "Male",
+    "dob": "2005-08-17",
+    "aadhaar_masked": "XXXX XXXX 1050",
+    "apaar_id": "APAAR88000050",
+    "category": "OBC",
+    "neet_score": 503,
+    "neet_rank": 38744,
+    "state": "Karnataka",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-18T16:04:19.681Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.96947956700163
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 91.89975805825694
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260050",
+        "score": 424,
+        "rank": 14884
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026051",
+    "name": "Siddhesh Jadhav",
+    "email": "siddhesh.jadhav51@example.com",
+    "phone": "+91 90051 10051",
+    "gender": "Male",
+    "dob": "2005-12-28",
+    "aadhaar_masked": "XXXX XXXX 1051",
+    "apaar_id": "APAAR88000051",
+    "category": "VJNT",
+    "neet_score": 475,
+    "neet_rank": 32214,
+    "state": "Maharashtra",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-17T15:05:39.232Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.12905173326858
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 86.26538633924606
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260051",
+        "score": 500,
+        "rank": 21080
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026052",
+    "name": "Anjali Jadhav",
+    "email": "anjali.jadhav52@example.com",
+    "phone": "+91 90052 10052",
+    "gender": "Male",
+    "dob": "2005-02-14",
+    "aadhaar_masked": "XXXX XXXX 1052",
+    "apaar_id": "APAAR88000052",
+    "category": "General",
+    "neet_score": 423,
+    "neet_rank": 42472,
+    "state": "Uttar Pradesh",
+    "status": "Application",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-10T22:56:40.850Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.60562729461869
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 92.19361152290003
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260052",
+        "score": 602,
+        "rank": 39868
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026053",
+    "name": "Aditya Chavan",
+    "email": "aditya.chavan53@example.com",
+    "phone": "+91 90053 10053",
+    "gender": "Female",
+    "dob": "2007-01-14",
+    "aadhaar_masked": "XXXX XXXX 1053",
+    "apaar_id": "APAAR88000053",
+    "category": "SC",
+    "neet_score": 645,
+    "neet_rank": 6200,
+    "state": "Maharashtra",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-13T07:27:13.123Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 94.06621128205512
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 84.4466521688411
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260053",
+        "score": 426,
+        "rank": 21643
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026054",
+    "name": "Vikram Gaikwad",
+    "email": "vikram.gaikwad54@example.com",
+    "phone": "+91 90054 10054",
+    "gender": "Female",
+    "dob": "2006-05-02",
+    "aadhaar_masked": "XXXX XXXX 1054",
+    "apaar_id": "APAAR88000054",
+    "category": "General",
+    "neet_score": 624,
+    "neet_rank": 4820,
+    "state": "Maharashtra",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-08T01:07:11.029Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.03273453070531
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 89.62970776040319
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260054",
+        "score": 572,
+        "rank": 22361
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026055",
+    "name": "Rohan Gaikwad",
+    "email": "rohan.gaikwad55@example.com",
+    "phone": "+91 90055 10055",
+    "gender": "Male",
+    "dob": "2005-10-14",
+    "aadhaar_masked": "XXXX XXXX 1055",
+    "apaar_id": "APAAR88000055",
+    "category": "General",
+    "neet_score": 633,
+    "neet_rank": 30716,
+    "state": "Maharashtra",
+    "status": "Verification",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-08T07:59:55.886Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 85.74694571811403
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 93.3911967775612
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260055",
+        "score": 489,
+        "rank": 40128
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026056",
+    "name": "Aditya Chavan",
+    "email": "aditya.chavan56@example.com",
+    "phone": "+91 90056 10056",
+    "gender": "Male",
+    "dob": "2007-07-01",
+    "aadhaar_masked": "XXXX XXXX 1056",
+    "apaar_id": "APAAR88000056",
+    "category": "EWS",
+    "neet_score": 625,
+    "neet_rank": 47467,
+    "state": "Maharashtra",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-18T05:36:28.516Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 85.5938994483739
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 83.10730728921916
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260056",
+        "score": 417,
+        "rank": 5128
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026057",
+    "name": "Rahul Shinde",
+    "email": "rahul.shinde57@example.com",
+    "phone": "+91 90057 10057",
+    "gender": "Male",
+    "dob": "2005-07-10",
+    "aadhaar_masked": "XXXX XXXX 1057",
+    "apaar_id": "APAAR88000057",
+    "category": "SC",
+    "neet_score": 628,
+    "neet_rank": 11072,
+    "state": "Kerala",
+    "status": "Application",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-19T03:51:56.028Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.04139533873494
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 86.12335598531662
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260057",
+        "score": 410,
+        "rank": 36170
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026058",
+    "name": "Anjali Pawar",
+    "email": "anjali.pawar58@example.com",
+    "phone": "+91 90058 10058",
+    "gender": "Female",
+    "dob": "2006-01-12",
+    "aadhaar_masked": "XXXX XXXX 1058",
+    "apaar_id": "APAAR88000058",
+    "category": "SC",
+    "neet_score": 616,
+    "neet_rank": 40980,
+    "state": "Kerala",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-10T05:18:31.266Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.82884292941475
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 84.16925820770106
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260058",
+        "score": 481,
+        "rank": 14622
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY5801",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026059",
+    "name": "Sayali Jadhav",
+    "email": "sayali.jadhav59@example.com",
+    "phone": "+91 90059 10059",
+    "gender": "Male",
+    "dob": "2005-07-24",
+    "aadhaar_masked": "XXXX XXXX 1059",
+    "apaar_id": "APAAR88000059",
+    "category": "OBC",
+    "neet_score": 545,
+    "neet_rank": 26139,
+    "state": "Kerala",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-18T16:36:45.847Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.1496151532495
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 91.53273937876537
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260059",
+        "score": 536,
+        "rank": 49974
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026060",
+    "name": "Pooja Suryavanshi",
+    "email": "pooja.suryavanshi60@example.com",
+    "phone": "+91 90060 10060",
+    "gender": "Male",
+    "dob": "2007-08-25",
+    "aadhaar_masked": "XXXX XXXX 1060",
+    "apaar_id": "APAAR88000060",
+    "category": "ST",
+    "neet_score": 442,
+    "neet_rank": 29457,
+    "state": "Kerala",
+    "status": "Application",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-18T11:19:28.280Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 87.09200704606715
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 83.24994875042957
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260060",
+        "score": 424,
+        "rank": 4923
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026061",
+    "name": "Aditya Pawar",
+    "email": "aditya.pawar61@example.com",
+    "phone": "+91 90061 10061",
+    "gender": "Male",
+    "dob": "2007-03-22",
+    "aadhaar_masked": "XXXX XXXX 1061",
+    "apaar_id": "APAAR88000061",
+    "category": "OBC",
+    "neet_score": 470,
+    "neet_rank": 22000,
+    "state": "Maharashtra",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-12T11:44:34.164Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.11719177958335
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 93.1508241416371
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260061",
+        "score": 469,
+        "rank": 13262
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026062",
+    "name": "Rohan Deshmukh",
+    "email": "rohan.deshmukh62@example.com",
+    "phone": "+91 90062 10062",
+    "gender": "Female",
+    "dob": "2005-02-23",
+    "aadhaar_masked": "XXXX XXXX 1062",
+    "apaar_id": "APAAR88000062",
+    "category": "General",
+    "neet_score": 451,
+    "neet_rank": 15700,
+    "state": "Uttar Pradesh",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-13T11:39:06.808Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 86.97032216914663
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 87.4170360491592
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260062",
+        "score": 443,
+        "rank": 39477
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026063",
+    "name": "Aditya Deshmukh",
+    "email": "aditya.deshmukh63@example.com",
+    "phone": "+91 90063 10063",
+    "gender": "Male",
+    "dob": "2006-09-04",
+    "aadhaar_masked": "XXXX XXXX 1063",
+    "apaar_id": "APAAR88000063",
+    "category": "OBC",
+    "neet_score": 651,
+    "neet_rank": 30038,
+    "state": "Uttar Pradesh",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-10T00:08:13.298Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 87.03652312612338
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 92.28885921271694
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260063",
+        "score": 520,
+        "rank": 33127
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026064",
+    "name": "Pooja Chavan",
+    "email": "pooja.chavan64@example.com",
+    "phone": "+91 90064 10064",
+    "gender": "Female",
+    "dob": "2006-08-03",
+    "aadhaar_masked": "XXXX XXXX 1064",
+    "apaar_id": "APAAR88000064",
+    "category": "General",
+    "neet_score": 646,
+    "neet_rank": 36154,
+    "state": "Kerala",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-14T01:20:30.792Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.54835046006471
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 91.39264777261685
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260064",
+        "score": 464,
+        "rank": 40097
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026065",
+    "name": "Sneha Patil",
+    "email": "sneha.patil65@example.com",
+    "phone": "+91 90065 10065",
+    "gender": "Male",
+    "dob": "2005-11-01",
+    "aadhaar_masked": "XXXX XXXX 1065",
+    "apaar_id": "APAAR88000065",
+    "category": "SC",
+    "neet_score": 464,
+    "neet_rank": 44413,
+    "state": "Kerala",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-16T14:08:31.952Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.64437932486771
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 81.48084201569
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260065",
+        "score": 668,
+        "rank": 2567
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY6501",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026066",
+    "name": "Sayali Chavan",
+    "email": "sayali.chavan66@example.com",
+    "phone": "+91 90066 10066",
+    "gender": "Male",
+    "dob": "2006-03-06",
+    "aadhaar_masked": "XXXX XXXX 1066",
+    "apaar_id": "APAAR88000066",
+    "category": "ST",
+    "neet_score": 699,
+    "neet_rank": 11965,
+    "state": "Karnataka",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-18T06:53:03.366Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.47676770296549
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 91.35947067720355
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260066",
+        "score": 570,
+        "rank": 36136
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026067",
+    "name": "Sayali Kulkarni",
+    "email": "sayali.kulkarni67@example.com",
+    "phone": "+91 90067 10067",
+    "gender": "Female",
+    "dob": "2006-04-28",
+    "aadhaar_masked": "XXXX XXXX 1067",
+    "apaar_id": "APAAR88000067",
+    "category": "General",
+    "neet_score": 654,
+    "neet_rank": 21102,
+    "state": "Uttar Pradesh",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-10T13:28:59.712Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.84157069137986
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 85.2461295512811
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260067",
+        "score": 639,
+        "rank": 23466
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026068",
+    "name": "Rohan Chavan",
+    "email": "rohan.chavan68@example.com",
+    "phone": "+91 90068 10068",
+    "gender": "Female",
+    "dob": "2007-03-16",
+    "aadhaar_masked": "XXXX XXXX 1068",
+    "apaar_id": "APAAR88000068",
+    "category": "VJNT",
+    "neet_score": 687,
+    "neet_rank": 33833,
+    "state": "Kerala",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-14T04:09:37.037Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.13647800506503
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 81.29998488749744
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260068",
+        "score": 540,
+        "rank": 46630
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026069",
+    "name": "Sneha Jadhav",
+    "email": "sneha.jadhav69@example.com",
+    "phone": "+91 90069 10069",
+    "gender": "Male",
+    "dob": "2007-10-11",
+    "aadhaar_masked": "XXXX XXXX 1069",
+    "apaar_id": "APAAR88000069",
+    "category": "General",
+    "neet_score": 531,
+    "neet_rank": 39310,
+    "state": "Uttar Pradesh",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-18T21:14:06.065Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.994873935333
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 80.52259966254712
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260069",
+        "score": 654,
+        "rank": 27398
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026070",
+    "name": "Siddhesh More",
+    "email": "siddhesh.more70@example.com",
+    "phone": "+91 90070 10070",
+    "gender": "Male",
+    "dob": "2007-01-16",
+    "aadhaar_masked": "XXXX XXXX 1070",
+    "apaar_id": "APAAR88000070",
+    "category": "EWS",
+    "neet_score": 531,
+    "neet_rank": 15028,
+    "state": "Uttar Pradesh",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-17T11:58:25.892Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 94.79535412469569
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 82.51045637216109
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260070",
+        "score": 565,
+        "rank": 27072
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026071",
+    "name": "Anjali Deshmukh",
+    "email": "anjali.deshmukh71@example.com",
+    "phone": "+91 90071 10071",
+    "gender": "Male",
+    "dob": "2005-08-08",
+    "aadhaar_masked": "XXXX XXXX 1071",
+    "apaar_id": "APAAR88000071",
+    "category": "ST",
+    "neet_score": 650,
+    "neet_rank": 50263,
+    "state": "Uttar Pradesh",
+    "status": "Counseling",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-08T09:51:00.747Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.42590093734488
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 83.91751137963561
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260071",
+        "score": 418,
+        "rank": 13245
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026072",
+    "name": "Pooja Jadhav",
+    "email": "pooja.jadhav72@example.com",
+    "phone": "+91 90072 10072",
+    "gender": "Male",
+    "dob": "2005-10-26",
+    "aadhaar_masked": "XXXX XXXX 1072",
+    "apaar_id": "APAAR88000072",
+    "category": "OBC",
+    "neet_score": 525,
+    "neet_rank": 46433,
+    "state": "Kerala",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-15T17:55:08.218Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.59892793867341
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 85.69499785208777
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260072",
+        "score": 628,
+        "rank": 3485
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026073",
+    "name": "Aditya Suryavanshi",
+    "email": "aditya.suryavanshi73@example.com",
+    "phone": "+91 90073 10073",
+    "gender": "Female",
+    "dob": "2007-07-12",
+    "aadhaar_masked": "XXXX XXXX 1073",
+    "apaar_id": "APAAR88000073",
+    "category": "General",
+    "neet_score": 562,
+    "neet_rank": 37993,
+    "state": "Uttar Pradesh",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-16T11:01:30.994Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.11424734212727
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 93.06250154062727
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260073",
+        "score": 663,
+        "rank": 4306
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026074",
+    "name": "Priya Kulkarni",
+    "email": "priya.kulkarni74@example.com",
+    "phone": "+91 90074 10074",
+    "gender": "Female",
+    "dob": "2007-02-26",
+    "aadhaar_masked": "XXXX XXXX 1074",
+    "apaar_id": "APAAR88000074",
+    "category": "EWS",
+    "neet_score": 510,
+    "neet_rank": 27403,
+    "state": "Maharashtra",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-08T20:37:30.917Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 94.71954060216902
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 93.28016578733678
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260074",
+        "score": 441,
+        "rank": 33392
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026075",
+    "name": "Siddhesh Shinde",
+    "email": "siddhesh.shinde75@example.com",
+    "phone": "+91 90075 10075",
+    "gender": "Male",
+    "dob": "2007-01-11",
+    "aadhaar_masked": "XXXX XXXX 1075",
+    "apaar_id": "APAAR88000075",
+    "category": "VJNT",
+    "neet_score": 614,
+    "neet_rank": 6922,
+    "state": "Karnataka",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-16T00:52:28.949Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 86.76075989885297
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 87.1184648356477
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260075",
+        "score": 468,
+        "rank": 28895
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026076",
+    "name": "Rohan Deshmukh",
+    "email": "rohan.deshmukh76@example.com",
+    "phone": "+91 90076 10076",
+    "gender": "Male",
+    "dob": "2006-12-20",
+    "aadhaar_masked": "XXXX XXXX 1076",
+    "apaar_id": "APAAR88000076",
+    "category": "SC",
+    "neet_score": 569,
+    "neet_rank": 35434,
+    "state": "Uttar Pradesh",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-17T09:23:38.778Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 87.43577200131756
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 81.29105448745885
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260076",
+        "score": 648,
+        "rank": 11545
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY7601",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026077",
+    "name": "Rohan Jadhav",
+    "email": "rohan.jadhav77@example.com",
+    "phone": "+91 90077 10077",
+    "gender": "Male",
+    "dob": "2006-03-18",
+    "aadhaar_masked": "XXXX XXXX 1077",
+    "apaar_id": "APAAR88000077",
+    "category": "General",
+    "neet_score": 504,
+    "neet_rank": 26782,
+    "state": "Uttar Pradesh",
+    "status": "Application",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-16T14:09:19.388Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 85.30144420279024
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 89.0831321197087
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260077",
+        "score": 495,
+        "rank": 10569
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026078",
+    "name": "Sneha Chavan",
+    "email": "sneha.chavan78@example.com",
+    "phone": "+91 90078 10078",
+    "gender": "Male",
+    "dob": "2006-11-24",
+    "aadhaar_masked": "XXXX XXXX 1078",
+    "apaar_id": "APAAR88000078",
+    "category": "VJNT",
+    "neet_score": 537,
+    "neet_rank": 50738,
+    "state": "Karnataka",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-14T21:18:36.526Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.45528831976753
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 83.21004243330492
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260078",
+        "score": 541,
+        "rank": 49278
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026079",
+    "name": "Rohan Suryavanshi",
+    "email": "rohan.suryavanshi79@example.com",
+    "phone": "+91 90079 10079",
+    "gender": "Female",
+    "dob": "2007-06-20",
+    "aadhaar_masked": "XXXX XXXX 1079",
+    "apaar_id": "APAAR88000079",
+    "category": "VJNT",
+    "neet_score": 662,
+    "neet_rank": 42593,
+    "state": "Kerala",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-11T18:15:14.994Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.06849806859186
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 84.4669207628245
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260079",
+        "score": 595,
+        "rank": 15148
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY7901",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026080",
+    "name": "Rohan Gaikwad",
+    "email": "rohan.gaikwad80@example.com",
+    "phone": "+91 90080 10080",
+    "gender": "Female",
+    "dob": "2007-07-21",
+    "aadhaar_masked": "XXXX XXXX 1080",
+    "apaar_id": "APAAR88000080",
+    "category": "SC",
+    "neet_score": 576,
+    "neet_rank": 10204,
+    "state": "Uttar Pradesh",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-13T03:07:21.934Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.96826898755947
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 85.19810897112846
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260080",
+        "score": 436,
+        "rank": 43496
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026081",
+    "name": "Vikram Chavan",
+    "email": "vikram.chavan81@example.com",
+    "phone": "+91 90081 10081",
+    "gender": "Male",
+    "dob": "2005-06-01",
+    "aadhaar_masked": "XXXX XXXX 1081",
+    "apaar_id": "APAAR88000081",
+    "category": "OBC",
+    "neet_score": 670,
+    "neet_rank": 42222,
+    "state": "Kerala",
+    "status": "Application",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-18T02:31:21.434Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 86.98791620077714
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 86.28633485116781
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260081",
+        "score": 622,
+        "rank": 17192
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026082",
+    "name": "Siddhesh Shinde",
+    "email": "siddhesh.shinde82@example.com",
+    "phone": "+91 90082 10082",
+    "gender": "Male",
+    "dob": "2005-02-19",
+    "aadhaar_masked": "XXXX XXXX 1082",
+    "apaar_id": "APAAR88000082",
+    "category": "General",
+    "neet_score": 456,
+    "neet_rank": 32446,
+    "state": "Kerala",
+    "status": "Application",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-14T02:12:12.403Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 87.82556843018715
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 84.07712486986723
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260082",
+        "score": 444,
+        "rank": 8649
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026083",
+    "name": "Sneha Pawar",
+    "email": "sneha.pawar83@example.com",
+    "phone": "+91 90083 10083",
+    "gender": "Female",
+    "dob": "2005-01-19",
+    "aadhaar_masked": "XXXX XXXX 1083",
+    "apaar_id": "APAAR88000083",
+    "category": "VJNT",
+    "neet_score": 622,
+    "neet_rank": 5015,
+    "state": "Karnataka",
+    "status": "Documents",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-08T23:40:49.041Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.15825107049113
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 85.19617335175695
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260083",
+        "score": 691,
+        "rank": 39410
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026084",
+    "name": "Sneha Pawar",
+    "email": "sneha.pawar84@example.com",
+    "phone": "+91 90084 10084",
+    "gender": "Female",
+    "dob": "2006-08-10",
+    "aadhaar_masked": "XXXX XXXX 1084",
+    "apaar_id": "APAAR88000084",
+    "category": "ST",
+    "neet_score": 422,
+    "neet_rank": 37660,
+    "state": "Karnataka",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-09T22:50:33.781Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 85.94443015505294
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 86.88665860307522
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260084",
+        "score": 475,
+        "rank": 22120
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026085",
+    "name": "Vikram Suryavanshi",
+    "email": "vikram.suryavanshi85@example.com",
+    "phone": "+91 90085 10085",
+    "gender": "Male",
+    "dob": "2005-02-20",
+    "aadhaar_masked": "XXXX XXXX 1085",
+    "apaar_id": "APAAR88000085",
+    "category": "EWS",
+    "neet_score": 681,
+    "neet_rank": 24727,
+    "state": "Karnataka",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-16T01:46:28.358Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 85.47457002171666
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 85.67253976306621
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260085",
+        "score": 616,
+        "rank": 31147
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026086",
+    "name": "Anjali More",
+    "email": "anjali.more86@example.com",
+    "phone": "+91 90086 10086",
+    "gender": "Female",
+    "dob": "2005-01-27",
+    "aadhaar_masked": "XXXX XXXX 1086",
+    "apaar_id": "APAAR88000086",
+    "category": "VJNT",
+    "neet_score": 696,
+    "neet_rank": 5142,
+    "state": "Uttar Pradesh",
+    "status": "Verification",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-15T23:06:18.673Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.4025242875856
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 81.0629592063592
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260086",
+        "score": 535,
+        "rank": 7445
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026087",
+    "name": "Aditya Chavan",
+    "email": "aditya.chavan87@example.com",
+    "phone": "+91 90087 10087",
+    "gender": "Male",
+    "dob": "2007-12-04",
+    "aadhaar_masked": "XXXX XXXX 1087",
+    "apaar_id": "APAAR88000087",
+    "category": "ST",
+    "neet_score": 445,
+    "neet_rank": 48190,
+    "state": "Kerala",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-11T15:34:01.056Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.92803871282631
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 88.89820485516145
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260087",
+        "score": 473,
+        "rank": 26755
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026088",
+    "name": "Siddhesh Pawar",
+    "email": "siddhesh.pawar88@example.com",
+    "phone": "+91 90088 10088",
+    "gender": "Male",
+    "dob": "2007-11-10",
+    "aadhaar_masked": "XXXX XXXX 1088",
+    "apaar_id": "APAAR88000088",
+    "category": "SC",
+    "neet_score": 573,
+    "neet_rank": 19996,
+    "state": "Uttar Pradesh",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-11T11:22:06.163Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.07816853511368
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 92.44653503971816
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260088",
+        "score": 696,
+        "rank": 20447
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026089",
+    "name": "Anjali Kulkarni",
+    "email": "anjali.kulkarni89@example.com",
+    "phone": "+91 90089 10089",
+    "gender": "Female",
+    "dob": "2007-04-23",
+    "aadhaar_masked": "XXXX XXXX 1089",
+    "apaar_id": "APAAR88000089",
+    "category": "EWS",
+    "neet_score": 492,
+    "neet_rank": 2486,
+    "state": "Kerala",
+    "status": "Verification",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-10T15:20:43.094Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.6811069182707
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 81.66519831967427
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260089",
+        "score": 585,
+        "rank": 50488
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026090",
+    "name": "Pooja Pawar",
+    "email": "pooja.pawar90@example.com",
+    "phone": "+91 90090 10090",
+    "gender": "Male",
+    "dob": "2007-08-28",
+    "aadhaar_masked": "XXXX XXXX 1090",
+    "apaar_id": "APAAR88000090",
+    "category": "ST",
+    "neet_score": 445,
+    "neet_rank": 18673,
+    "state": "Maharashtra",
+    "status": "Verification",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-19T03:20:22.680Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 85.43864287883244
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 91.8894077863802
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260090",
+        "score": 613,
+        "rank": 14498
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026091",
+    "name": "Sneha Jadhav",
+    "email": "sneha.jadhav91@example.com",
+    "phone": "+91 90091 10091",
+    "gender": "Female",
+    "dob": "2006-03-02",
+    "aadhaar_masked": "XXXX XXXX 1091",
+    "apaar_id": "APAAR88000091",
+    "category": "SC",
+    "neet_score": 505,
+    "neet_rank": 50580,
+    "state": "Karnataka",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-15T09:59:59.659Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.89530335742612
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 81.22394675845753
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260091",
+        "score": 425,
+        "rank": 6126
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026092",
+    "name": "Anjali Jadhav",
+    "email": "anjali.jadhav92@example.com",
+    "phone": "+91 90092 10092",
+    "gender": "Female",
+    "dob": "2007-06-04",
+    "aadhaar_masked": "XXXX XXXX 1092",
+    "apaar_id": "APAAR88000092",
+    "category": "General",
+    "neet_score": 418,
+    "neet_rank": 39262,
+    "state": "Kerala",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-17T20:26:28.693Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 93.14530974864401
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 93.84608352720193
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260092",
+        "score": 539,
+        "rank": 32426
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY9201",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026093",
+    "name": "Rahul Deshmukh",
+    "email": "rahul.deshmukh93@example.com",
+    "phone": "+91 90093 10093",
+    "gender": "Female",
+    "dob": "2006-06-16",
+    "aadhaar_masked": "XXXX XXXX 1093",
+    "apaar_id": "APAAR88000093",
+    "category": "VJNT",
+    "neet_score": 620,
+    "neet_rank": 10861,
+    "state": "Kerala",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-17T12:52:59.784Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.03492426007084
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 84.89958398767648
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260093",
+        "score": 659,
+        "rank": 2360
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026094",
+    "name": "Pooja Kulkarni",
+    "email": "pooja.kulkarni94@example.com",
+    "phone": "+91 90094 10094",
+    "gender": "Female",
+    "dob": "2006-03-01",
+    "aadhaar_masked": "XXXX XXXX 1094",
+    "apaar_id": "APAAR88000094",
+    "category": "ST",
+    "neet_score": 483,
+    "neet_rank": 9166,
+    "state": "Maharashtra",
+    "status": "Confirmed",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-18T02:20:16.213Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.38402047309404
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 81.28804597468338
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260094",
+        "score": 694,
+        "rank": 35054
+      }
+    },
+    "payments": [
+      {
+        "id": "PAY9401",
+        "amount": 5500,
+        "date": "2026-01-05",
+        "type": "Tuition",
+        "method": "UPI",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "id": "ST2026095",
+    "name": "Sayali Kulkarni",
+    "email": "sayali.kulkarni95@example.com",
+    "phone": "+91 90095 10095",
+    "gender": "Male",
+    "dob": "2006-03-19",
+    "aadhaar_masked": "XXXX XXXX 1095",
+    "apaar_id": "APAAR88000095",
+    "category": "SC",
+    "neet_score": 528,
+    "neet_rank": 10160,
+    "state": "Karnataka",
+    "status": "Counseling",
+    "documents_verified": true,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-16T17:23:43.593Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.2956719623166
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 91.55323527977131
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260095",
+        "score": 517,
+        "rank": 27193
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026096",
+    "name": "Rahul Shinde",
+    "email": "rahul.shinde96@example.com",
+    "phone": "+91 90096 10096",
+    "gender": "Male",
+    "dob": "2005-10-26",
+    "aadhaar_masked": "XXXX XXXX 1096",
+    "apaar_id": "APAAR88000096",
+    "category": "ST",
+    "neet_score": 463,
+    "neet_rank": 16173,
+    "state": "Karnataka",
+    "status": "Application",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-15T11:28:56.393Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 91.45135489402091
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 89.3976563396829
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260096",
+        "score": 615,
+        "rank": 43045
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026097",
+    "name": "Vikram More",
+    "email": "vikram.more97@example.com",
+    "phone": "+91 90097 10097",
+    "gender": "Male",
+    "dob": "2005-06-07",
+    "aadhaar_masked": "XXXX XXXX 1097",
+    "apaar_id": "APAAR88000097",
+    "category": "SC",
+    "neet_score": 504,
+    "neet_rank": 35170,
+    "state": "Maharashtra",
+    "status": "Inquiry",
+    "documents_verified": false,
+    "branch": "Pune Center",
+    "registration_date": "2026-01-17T17:39:01.491Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "state_85"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 92.99228818537739
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 83.22343562136624
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260097",
+        "score": 474,
+        "rank": 10973
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026098",
+    "name": "Pooja Pawar",
+    "email": "pooja.pawar98@example.com",
+    "phone": "+91 90098 10098",
+    "gender": "Male",
+    "dob": "2007-05-21",
+    "aadhaar_masked": "XXXX XXXX 1098",
+    "apaar_id": "APAAR88000098",
+    "category": "EWS",
+    "neet_score": 451,
+    "neet_rank": 41558,
+    "state": "Karnataka",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-12T01:18:45.418Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 85.02851404926689
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 80.45137929782733
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260098",
+        "score": 408,
+        "rank": 43333
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026099",
+    "name": "Anjali Pawar",
+    "email": "anjali.pawar99@example.com",
+    "phone": "+91 90099 10099",
+    "gender": "Male",
+    "dob": "2006-02-13",
+    "aadhaar_masked": "XXXX XXXX 1099",
+    "apaar_id": "APAAR88000099",
+    "category": "EWS",
+    "neet_score": 529,
+    "neet_rank": 34501,
+    "state": "Karnataka",
+    "status": "Admission",
+    "documents_verified": true,
+    "branch": "Bangalore",
+    "registration_date": "2026-01-10T20:35:22.087Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 90.88325920406783
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 90.89066194098051
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260099",
+        "score": 556,
+        "rank": 37172
+      }
+    },
+    "payments": []
+  },
+  {
+    "id": "ST2026100",
+    "name": "Siddhesh Deshmukh",
+    "email": "siddhesh.deshmukh100@example.com",
+    "phone": "+91 90100 10100",
+    "gender": "Female",
+    "dob": "2006-06-26",
+    "aadhaar_masked": "XXXX XXXX 1100",
+    "apaar_id": "APAAR88000100",
+    "category": "General",
+    "neet_score": 557,
+    "neet_rank": 31097,
+    "state": "Kerala",
+    "status": "Verification",
+    "documents_verified": false,
+    "branch": "Latur Hub",
+    "registration_date": "2026-01-12T16:17:04.221Z",
+    "preferences": [],
+    "documents": [],
+    "counseling_registrations": [
+      "aiq"
+    ],
+    "academic_history": {
+      "class10": {
+        "board": "CBSE",
+        "year": "2023",
+        "percentage": 86.3159992321843
+      },
+      "class12": {
+        "board": "State Board",
+        "year": "2025",
+        "percentage": 83.28186071364358
+      },
+      "neetDetails": {
+        "rollNo": "NEET20260100",
+        "score": 556,
+        "rank": 50094
+      }
+    },
+    "payments": []
+  }
+]

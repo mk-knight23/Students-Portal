@@ -15,14 +15,13 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/utils";
 
-import { BranchSwitcher } from "./branch-switcher";
-
-import { useBranchStore } from "@/hooks/use-branch-store";
+import { useAppStore } from "@/store/useAppStore";
 import { useRouter } from "next/navigation";
 import { ThemeToggle } from "./theme-toggle";
+import { BranchSwitcher } from "./branch-switcher";
 
 export function Navbar() {
-    const { activeBranch, userRole } = useBranchStore();
+    const { activeBranch, currentUser } = useAppStore();
     const router = useRouter();
     return (
         <header className="sticky top-0 z-10 flex h-16 w-full items-center gap-4 glass border-b px-6 lg:px-8">
@@ -55,9 +54,9 @@ export function Navbar() {
                                 <AvatarFallback className="bg-primary/20 text-primary text-xs">MK</AvatarFallback>
                             </Avatar>
                             <div className="hidden flex-col items-start gap-0.5 text-xs lg:flex">
-                                <span className="font-bold leading-none">M. Kazi</span>
+                                <span className="font-bold leading-none">{currentUser?.name || "User"}</span>
                                 <span className="text-[10px] text-muted-foreground opacity-70 uppercase tracking-widest font-bold">
-                                    {activeBranch} {userRole === "Admin" ? "Office Head" : "Staff"}
+                                    {activeBranch} {currentUser?.role === "admin" ? "Office Head" : "Staff"}
                                 </span>
                             </div>
                         </Button>

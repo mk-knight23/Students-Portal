@@ -15,17 +15,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
-import { useBranchStore, type UserRole } from "@/hooks/use-branch-store";
+import { useAppStore } from "@/store/useAppStore";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { signIn } from "next-auth/react";
 
 export default function LoginPage() {
-    const [role, setRole] = React.useState<UserRole>("Staff");
+    const [role, setRole] = React.useState<"admin" | "student">("admin");
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
     const [isLoading, setIsLoading] = React.useState(false);
-    const { setUserRole } = useBranchStore();
+    const { setCurrentUser } = useAppStore();
     const router = useRouter();
 
     const handleLogin = async (e: React.FormEvent) => {
@@ -44,7 +44,7 @@ export default function LoginPage() {
                     description: "Please check your official email and password."
                 });
             } else {
-                setUserRole(role);
+                setCurrentUser({ id: 'USR001', name: email.split('@')[0], role });
                 toast.success(`Welcome back`, {
                     description: "Standard session established with DPDPA audit logging active."
                 });
@@ -97,24 +97,24 @@ export default function LoginPage() {
                                     <Label className="text-xs font-bold uppercase tracking-widest text-muted-foreground ml-1">Access Role</Label>
                                     <div className="grid grid-cols-2 gap-4">
                                         <div
-                                            onClick={() => setRole("Staff")}
-                                            className={`p-4 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "Staff"
+                                            onClick={() => setRole("student")}
+                                            className={`p-4 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "student"
                                                 ? "bg-primary/20 border-primary shadow-lg shadow-primary/10"
                                                 : "bg-white/5 border-white/10 hover:border-white/20"
                                                 }`}
                                         >
-                                            <User className={`h-6 w-6 ${role === "Staff" ? "text-primary" : "text-muted-foreground"}`} />
-                                            <span className={`text-[10px] font-bold uppercase tracking-widest ${role === "Staff" ? "text-primary" : "text-muted-foreground"}`}>Office Staff</span>
+                                            <User className={`h-6 w-6 ${role === "student" ? "text-primary" : "text-muted-foreground"}`} />
+                                            <span className={`text-[10px] font-bold uppercase tracking-widest ${role === "student" ? "text-primary" : "text-muted-foreground"}`}>Student Portal</span>
                                         </div>
                                         <div
-                                            onClick={() => setRole("Admin")}
-                                            className={`p-4 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "Admin"
+                                            onClick={() => setRole("admin")}
+                                            className={`p-4 rounded-2xl border cursor-pointer transition-all flex flex-col items-center gap-2 ${role === "admin"
                                                 ? "bg-primary/20 border-primary shadow-lg shadow-primary/10"
                                                 : "bg-white/5 border-white/10 hover:border-white/20"
                                                 }`}
                                         >
-                                            <Users className={`h-6 w-6 ${role === "Admin" ? "text-primary" : "text-muted-foreground"}`} />
-                                            <span className={`text-[10px] font-bold uppercase tracking-widest ${role === "Admin" ? "text-primary" : "text-muted-foreground"}`}>Office Head</span>
+                                            <Users className={`h-6 w-6 ${role === "admin" ? "text-primary" : "text-muted-foreground"}`} />
+                                            <span className={`text-[10px] font-bold uppercase tracking-widest ${role === "admin" ? "text-primary" : "text-muted-foreground"}`}>Office Admin</span>
                                         </div>
                                     </div>
                                 </div>

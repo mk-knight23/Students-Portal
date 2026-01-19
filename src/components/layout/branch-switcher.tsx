@@ -7,23 +7,17 @@ import {
     Check,
     Globe
 } from "lucide-react";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { useBranchStore } from "@/hooks/use-branch-store";
+import { useAppStore } from "@/store/useAppStore";
 
 const branches = ["Latur", "Pune", "Mumbai", "Bangalore"];
 
 export function BranchSwitcher() {
-    const { activeBranch, setActiveBranch, userRole } = useBranchStore();
+    const { activeBranch, setActiveBranch, currentUser } = useAppStore();
+    const isAdmin = currentUser?.role === 'admin';
 
-    if (userRole !== "Admin") {
+    if (!isAdmin) {
         return (
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl border border-white/10 bg-white/5">
                 <Building2 className="h-4 w-4 text-muted-foreground" />

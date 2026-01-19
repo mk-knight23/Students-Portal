@@ -1,0 +1,101 @@
+[
+    {
+        "id": "MH-01",
+        "name": "Grant Medical College (JJ Hospital)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Government",
+        "cutoff_2025": 655,
+        "seats": 250
+    },
+    {
+        "id": "MH-02",
+        "name": "BJ Medical College",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Government",
+        "cutoff_2025": 648,
+        "seats": 200
+    },
+    {
+        "id": "MH-03",
+        "name": "Lokmanya Tilak Municipal Medical College",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Government",
+        "cutoff_2025": 642,
+        "seats": 150
+    },
+    {
+        "id": "KA-01",
+        "name": "Bangalore Medical College (BMC)",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "type": "Government",
+        "cutoff_2025": 660,
+        "seats": 250
+    },
+    {
+        "id": "KA-02",
+        "name": "Kasturba Medical College (KMC)",
+        "city": "Manipal",
+        "state": "Karnataka",
+        "type": "Private",
+        "cutoff_2025": 580,
+        "seats": 250
+    },
+    {
+        "id": "KA-03",
+        "name": "St. John's Medical College",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "type": "Private",
+        "cutoff_2025": 610,
+        "seats": 150
+    },
+    {
+        "id": "KL-01",
+        "name": "Government Medical College (Trivandrum)",
+        "city": "Trivandrum",
+        "state": "Kerala",
+        "type": "Government",
+        "cutoff_2025": 670,
+        "seats": 200
+    },
+    {
+        "id": "KL-02",
+        "name": "Amrita Institute of Medical Sciences",
+        "city": "Kochi",
+        "state": "Kerala",
+        "type": "Private",
+        "cutoff_2025": 520,
+        "seats": 100
+    },
+    {
+        "id": "UP-01",
+        "name": "King George's Medical University (KGMU)",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh",
+        "type": "Government",
+        "cutoff_2025": 665,
+        "seats": 250
+    },
+    {
+        "id": "UP-02",
+        "name": "Banaras Hindu University (BHU)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "type": "Government",
+        "cutoff_2025": 680,
+        "seats": 100
+    },
+    {
+        "id": "UP-03",
+        "name": "GSVM Medical College",
+        "city": "Kanpur",
+        "state": "Uttar Pradesh",
+        "type": "Government",
+        "cutoff_2025": 635,
+        "seats": 250
+    }
+]

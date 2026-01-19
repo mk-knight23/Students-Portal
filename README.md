@@ -79,9 +79,10 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## 🗺️ Roadmap
 
-Current Version: **v0.0.1 (Frontend Baseline)**
+Current Version: **v0.0.2 (Cleanup + Stabilization)**
 
 - [x] **v0.0.1**: Initial mock frontend baseline, Zero Backend.
+- [x] **v0.0.2**: Cleanup, naming consistency, lint fixes, docs update.
 - [ ] **v0.1.0**: Frontend feature expansion & UI polish.
 - [ ] **v0.2.0**: NextAuth integration with real providers.
 - [ ] **v0.3.0**: Real Backend API integration (Node/Next.js).
